@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f2f232b6d468c3c4aafc335d5c4e67d0
+timeCreated: 1463315121
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Missiles/Sparkle/SparkleMissileGreen.prefab
+  uploadId: 475653

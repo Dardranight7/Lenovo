@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3b923a1a5b516064284ec9f1c4410ff7
+timeCreated: 1491497785
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Demo/Prefabs/Projectiles/Orb/OrbMissileYellowOBJ.prefab
+  uploadId: 475653

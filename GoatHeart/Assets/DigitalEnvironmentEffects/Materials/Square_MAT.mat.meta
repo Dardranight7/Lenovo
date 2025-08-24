@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b64f60ac45d757841a0bb8957997982a
+timeCreated: 1486849301
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83441
+  packageName: Digital Environment Effects
+  packageVersion: 1.0
+  assetPath: Assets/DigitalEnvironmentEffects/Materials/Square_MAT.mat
+  uploadId: 163171

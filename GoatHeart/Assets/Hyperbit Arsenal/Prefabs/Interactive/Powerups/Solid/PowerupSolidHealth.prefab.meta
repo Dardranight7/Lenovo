@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0076ca9e9c7a0ea4ba96adf83f01c605
+timeCreated: 1463850153
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Interactive/Powerups/Solid/PowerupSolidHealth.prefab
+  uploadId: 475653

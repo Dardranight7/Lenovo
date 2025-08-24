@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cacda57d0132aab4d8f30997b33b02a7
+timeCreated: 1463753622
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Warp/WarpYellow.prefab
+  uploadId: 475653

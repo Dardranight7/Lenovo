@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 918b8300d325e4941979d7bc2b321fb8
+timeCreated: 1463773946
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Demo/Materials/glowblock_green.mat
+  uploadId: 475653

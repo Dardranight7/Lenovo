@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 38f6f984a0236c44a898f0ebf5526eaa
+timeCreated: 1463940840
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Shield/Hit/ShieldHitGreen.prefab
+  uploadId: 475653

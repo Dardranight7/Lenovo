@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8abea36a711e25b40996a6fa45ff38b5
+timeCreated: 1486847325
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83441
+  packageName: Digital Environment Effects
+  packageVersion: 1.0
+  assetPath: Assets/DigitalEnvironmentEffects/Prefabs/DigitLineParticles.prefab
+  uploadId: 163171

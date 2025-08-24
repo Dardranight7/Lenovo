@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a7b4687a654e6384b8c4f3f1a56c265a
+timeCreated: 1463146098
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Missiles/EnergyBox/EnergyBoxPurple.prefab
+  uploadId: 475653

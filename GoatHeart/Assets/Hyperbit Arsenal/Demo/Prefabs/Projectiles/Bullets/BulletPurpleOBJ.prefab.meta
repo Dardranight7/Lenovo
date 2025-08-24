@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 226f8603f443ffc4a85cf03b7dac47a5
+timeCreated: 1462213396
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Demo/Prefabs/Projectiles/Bullets/BulletPurpleOBJ.prefab
+  uploadId: 475653

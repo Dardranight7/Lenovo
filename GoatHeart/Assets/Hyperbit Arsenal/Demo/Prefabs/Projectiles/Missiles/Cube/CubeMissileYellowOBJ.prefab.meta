@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c73af81244a73714c88965b5385465b5
+timeCreated: 1463319292
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Demo/Prefabs/Projectiles/Missiles/Cube/CubeMissileYellowOBJ.prefab
+  uploadId: 475653

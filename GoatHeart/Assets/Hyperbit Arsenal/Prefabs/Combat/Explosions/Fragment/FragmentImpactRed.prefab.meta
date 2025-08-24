@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ef628b69fe91a8446a1da61ad014c067
+timeCreated: 1491439744
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Explosions/Fragment/FragmentImpactRed.prefab
+  uploadId: 475653

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d2f17b35734e894438097c7a9357e3b0
+timeCreated: 1463877035
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Explosions/Lightning/LightningImpactYellow.prefab
+  uploadId: 475653

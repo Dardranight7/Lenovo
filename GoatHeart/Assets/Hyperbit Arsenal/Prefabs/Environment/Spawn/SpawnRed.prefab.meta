@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e9c841a9e84aafb469eb43096c376383
+timeCreated: 1462802336
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Environment/Spawn/SpawnRed.prefab
+  uploadId: 475653

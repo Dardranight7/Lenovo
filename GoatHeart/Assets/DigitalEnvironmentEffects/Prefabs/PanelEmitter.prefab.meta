@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5d3ab7f71117ab949b769b6541f0b339
+timeCreated: 1487452419
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83441
+  packageName: Digital Environment Effects
+  packageVersion: 1.0
+  assetPath: Assets/DigitalEnvironmentEffects/Prefabs/PanelEmitter.prefab
+  uploadId: 163171

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 19f80fb5af23e694d850192826a36238
+timeCreated: 1463315448
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Explosions/Sparkle/SparkleExplosionYellow.prefab
+  uploadId: 475653

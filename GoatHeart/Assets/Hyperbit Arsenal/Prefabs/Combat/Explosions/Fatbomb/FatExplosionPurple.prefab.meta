@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0f6928ec70e624e438911218b3baffb8
+timeCreated: 1463870680
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Explosions/Fatbomb/FatExplosionPurple.prefab
+  uploadId: 475653

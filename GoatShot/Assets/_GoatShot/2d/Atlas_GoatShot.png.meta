@@ -1,0 +1,843 @@
+fileFormatVersion: 2
+guid: 90fb13cddedbc5948a9ce847a7dcb564
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atlas_GoatShot_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4136
+        width: 2048
+        height: 4096
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ca35c9fa5573749b5a2684bf6df2ce
+      internalID: -1532951172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_1
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 4136
+        width: 2048
+        height: 4096
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba91dcc759e1e8e4b861733b0c1d083f
+      internalID: 988291557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_2
+      rect:
+        serializedVersion: 2
+        x: 4179
+        y: 4136
+        width: 2048
+        height: 4096
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17495a426e7b5c240af561a6bbfb86a3
+      internalID: 1661363720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2048
+        height: 4096
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376170038250f6540b1b613cce58bde3
+      internalID: -266453493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_5
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 0
+        width: 2048
+        height: 4096
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fd31b0f5f26914889f72335a3fe176
+      internalID: 1713129518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_6
+      rect:
+        serializedVersion: 2
+        x: 5339
+        y: 3310
+        width: 341
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa9a8eb5c34dac4aaaf015fd22d6c04
+      internalID: 502311647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_59
+      rect:
+        serializedVersion: 2
+        x: 4272
+        y: 2474
+        width: 687
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4813fd4d649f975478522a2bf517dfbc
+      internalID: 1546675894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_60
+      rect:
+        serializedVersion: 2
+        x: 5234
+        y: 2476
+        width: 549
+        height: 549
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0cac4a18660754096bc70ac5b330c0
+      internalID: 1453097219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_61
+      rect:
+        serializedVersion: 2
+        x: 4291
+        y: 2269
+        width: 1537
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e78fb3a565f90041a9f5eac80701886
+      internalID: 2003528862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_62
+      rect:
+        serializedVersion: 2
+        x: 4289
+        y: 2108
+        width: 1575
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e693734fd5bfb4f8e2e03d5778cb01
+      internalID: 652048380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_63
+      rect:
+        serializedVersion: 2
+        x: 4294
+        y: 596
+        width: 268
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f550ec21e03641e4d840013553adc8a6
+      internalID: -891736047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_73
+      rect:
+        serializedVersion: 2
+        x: 5881
+        y: 267
+        width: 162
+        height: 471
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc8d67c6b8addba40843e223364172fc
+      internalID: 487734827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_74
+      rect:
+        serializedVersion: 2
+        x: 4290
+        y: 410
+        width: 976
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d026dc3a361a284385123e54b26e491
+      internalID: -56305208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_75
+      rect:
+        serializedVersion: 2
+        x: 4290
+        y: 283
+        width: 106
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa40cba59455724aa14b11d6f726367
+      internalID: -2056970396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_76
+      rect:
+        serializedVersion: 2
+        x: 4424
+        y: 283
+        width: 842
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53532f689edc564391ae0612730c403
+      internalID: 235447006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_77
+      rect:
+        serializedVersion: 2
+        x: 4290
+        y: 109
+        width: 968
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8854bca3ea93b084c8bec7e851da7c70
+      internalID: 130304271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_4
+      rect:
+        serializedVersion: 2
+        x: 5300
+        y: 3599
+        width: 445
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb46d1e9de20d045ac7337789cdd9c9
+      internalID: -1814014443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_11
+      rect:
+        serializedVersion: 2
+        x: 5160
+        y: 3794
+        width: 725
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b501df2ea00f774da7483208cf6a7e5
+      internalID: -1362445740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_7
+      rect:
+        serializedVersion: 2
+        x: 4274
+        y: 3006
+        width: 730
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f817c2fbc724dc4cb0bb084e7008d8f
+      internalID: -1531239030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_8
+      rect:
+        serializedVersion: 2
+        x: 4265
+        y: 3305
+        width: 747
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc1587e391305a4286bbcbd405d8f2b
+      internalID: -365376593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_9
+      rect:
+        serializedVersion: 2
+        x: 4316
+        y: 3787
+        width: 643
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201328c7d11de934d84fd9f2eb0eb9f1
+      internalID: -1498636044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_10
+      rect:
+        serializedVersion: 2
+        x: 4225
+        y: 1583
+        width: 1494
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8bb3a2157cab04b8683e7eab5ec504
+      internalID: 1420177431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_12
+      rect:
+        serializedVersion: 2
+        x: 4302
+        y: 1355
+        width: 682
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc3da9a2cf7a1a4f878e37a370e7968
+      internalID: -296134583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_13
+      rect:
+        serializedVersion: 2
+        x: 5147
+        y: 1356
+        width: 145
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20bc802ddbf1ae45bbccbc7a6155cd4
+      internalID: 1977732430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_14
+      rect:
+        serializedVersion: 2
+        x: 5317
+        y: 1354
+        width: 145
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae0800291d580341aad169d13e1d05c
+      internalID: 1506685997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_15
+      rect:
+        serializedVersion: 2
+        x: 5482
+        y: 1355
+        width: 145
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae127283ff30ce4fab4bd22a64a1fd6
+      internalID: -2022534120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_16
+      rect:
+        serializedVersion: 2
+        x: 4284
+        y: 997
+        width: 1039
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00f768709b24bf47a2178c03e36a202
+      internalID: -1469305431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_17
+      rect:
+        serializedVersion: 2
+        x: 4672
+        y: 625
+        width: 1089
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195dadb172530d141870eeac5f6ef3b2
+      internalID: -111261527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_GoatShot_18
+      rect:
+        serializedVersion: 2
+        x: 5718
+        y: 914
+        width: 730
+        height: 1103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca990e8d88c7e4438422afebac5cbcc
+      internalID: 2012265279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a76527bd5cb854c4d95f71dc0c042b3e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Atlas_GoatShot_0: -1532951172
+      Atlas_GoatShot_1: 988291557
+      Atlas_GoatShot_10: 1420177431
+      Atlas_GoatShot_11: -1362445740
+      Atlas_GoatShot_12: -296134583
+      Atlas_GoatShot_13: 1977732430
+      Atlas_GoatShot_14: 1506685997
+      Atlas_GoatShot_15: -2022534120
+      Atlas_GoatShot_16: -1469305431
+      Atlas_GoatShot_17: -111261527
+      Atlas_GoatShot_18: 2012265279
+      Atlas_GoatShot_19: 1184137900
+      Atlas_GoatShot_2: 1661363720
+      Atlas_GoatShot_20: 1430645798
+      Atlas_GoatShot_21: -1451160313
+      Atlas_GoatShot_22: 343982372
+      Atlas_GoatShot_23: 1577871053
+      Atlas_GoatShot_24: 1205863849
+      Atlas_GoatShot_25: -2135588794
+      Atlas_GoatShot_26: -1290339615
+      Atlas_GoatShot_27: -2082033259
+      Atlas_GoatShot_28: -541637963
+      Atlas_GoatShot_29: -435358353
+      Atlas_GoatShot_3: -266453493
+      Atlas_GoatShot_30: -754803871
+      Atlas_GoatShot_31: -685267820
+      Atlas_GoatShot_32: -640743368
+      Atlas_GoatShot_33: 1700885855
+      Atlas_GoatShot_34: -825453666
+      Atlas_GoatShot_35: 338604894
+      Atlas_GoatShot_36: 1356178676
+      Atlas_GoatShot_37: 1869492822
+      Atlas_GoatShot_38: 506292731
+      Atlas_GoatShot_39: -316115025
+      Atlas_GoatShot_4: -1814014443
+      Atlas_GoatShot_40: -1823349874
+      Atlas_GoatShot_41: -908765569
+      Atlas_GoatShot_42: 998057211
+      Atlas_GoatShot_43: -1545341842
+      Atlas_GoatShot_44: -1062272674
+      Atlas_GoatShot_45: -1813246759
+      Atlas_GoatShot_46: -1300243476
+      Atlas_GoatShot_47: -1524593325
+      Atlas_GoatShot_48: 471485322
+      Atlas_GoatShot_49: -1420972711
+      Atlas_GoatShot_5: 1713129518
+      Atlas_GoatShot_50: -2043609855
+      Atlas_GoatShot_51: 1090501174
+      Atlas_GoatShot_52: -283390440
+      Atlas_GoatShot_53: 1365235793
+      Atlas_GoatShot_54: -610345106
+      Atlas_GoatShot_55: -1028966220
+      Atlas_GoatShot_56: 379995956
+      Atlas_GoatShot_57: 1063277452
+      Atlas_GoatShot_58: 1075538351
+      Atlas_GoatShot_59: 1546675894
+      Atlas_GoatShot_6: 502311647
+      Atlas_GoatShot_60: 1453097219
+      Atlas_GoatShot_61: 2003528862
+      Atlas_GoatShot_62: 652048380
+      Atlas_GoatShot_63: -891736047
+      Atlas_GoatShot_64: -1899994980
+      Atlas_GoatShot_65: -1221881041
+      Atlas_GoatShot_66: -480593328
+      Atlas_GoatShot_67: 171798573
+      Atlas_GoatShot_68: 758267198
+      Atlas_GoatShot_69: -612231512
+      Atlas_GoatShot_7: -1531239030
+      Atlas_GoatShot_70: 1010979782
+      Atlas_GoatShot_71: 1531697170
+      Atlas_GoatShot_72: -1913428870
+      Atlas_GoatShot_73: 487734827
+      Atlas_GoatShot_74: -56305208
+      Atlas_GoatShot_75: -2056970396
+      Atlas_GoatShot_76: 235447006
+      Atlas_GoatShot_77: 130304271
+      Atlas_GoatShot_78: -1840271702
+      Atlas_GoatShot_79: 1017240384
+      Atlas_GoatShot_8: -365376593
+      Atlas_GoatShot_80: -1469956465
+      Atlas_GoatShot_81: -962482234
+      Atlas_GoatShot_82: 820454518
+      Atlas_GoatShot_83: 1748128875
+      Atlas_GoatShot_84: 497249479
+      Atlas_GoatShot_85: -1068066856
+      Atlas_GoatShot_86: -241018408
+      Atlas_GoatShot_87: 1818559952
+      Atlas_GoatShot_9: -1498636044
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

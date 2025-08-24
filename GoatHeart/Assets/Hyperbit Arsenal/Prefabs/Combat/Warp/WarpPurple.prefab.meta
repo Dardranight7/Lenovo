@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d4a87ef445777d54ab55f4d7c28bab5b
+timeCreated: 1463753620
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Warp/WarpPurple.prefab
+  uploadId: 475653

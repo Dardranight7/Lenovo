@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bf56edf34f04ecc4dae9da1a4adb5b71
+timeCreated: 1463870736
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Demo/Prefabs/Projectiles/Fatbomb/FatBombMissileRedOBJ.prefab
+  uploadId: 475653

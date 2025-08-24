@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 99931d29d1185854794a0300d9224664
+timeCreated: 1462801400
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Interactive/Pickups/PowerRing/PowerRingYellow.prefab
+  uploadId: 475653

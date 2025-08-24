@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3f3b1f31cd9aca34baa9ca93aa5de7d7
+timeCreated: 1463316660
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Missiles/ShapeMissiles/LongCube/LongCubeMissileRed.prefab
+  uploadId: 475653

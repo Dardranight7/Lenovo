@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 90b520ccc4d731b4b8691244b097b4da
+timeCreated: 1463143463
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Explosions/ClusterBomb/ClusterExplosionYellow.prefab
+  uploadId: 475653

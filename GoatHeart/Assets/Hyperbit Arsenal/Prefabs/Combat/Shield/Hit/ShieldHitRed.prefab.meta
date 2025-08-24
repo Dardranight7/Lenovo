@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 716abf850460a88469b6dd2657b630b0
+timeCreated: 1463940961
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Shield/Hit/ShieldHitRed.prefab
+  uploadId: 475653

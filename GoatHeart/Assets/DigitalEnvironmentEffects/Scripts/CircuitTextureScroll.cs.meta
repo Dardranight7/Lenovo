@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 2a2769d027cf75b47b47d5a9b32b3f63
+timeCreated: 1487047128
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83441
+  packageName: Digital Environment Effects
+  packageVersion: 1.0
+  assetPath: Assets/DigitalEnvironmentEffects/Scripts/CircuitTextureScroll.cs
+  uploadId: 163171

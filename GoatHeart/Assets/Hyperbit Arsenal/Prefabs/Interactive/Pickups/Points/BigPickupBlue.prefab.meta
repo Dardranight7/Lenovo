@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2c78ada4728fb5a4cb607be417a13d0a
+timeCreated: 1461789270
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Interactive/Pickups/Points/BigPickupBlue.prefab
+  uploadId: 475653

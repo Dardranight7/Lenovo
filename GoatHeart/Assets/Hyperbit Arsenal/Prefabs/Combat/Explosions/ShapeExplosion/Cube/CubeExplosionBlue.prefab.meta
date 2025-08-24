@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5f686ee572bb0e44594fd11754c146b9
+timeCreated: 1461680070
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Explosions/ShapeExplosion/Cube/CubeExplosionBlue.prefab
+  uploadId: 475653

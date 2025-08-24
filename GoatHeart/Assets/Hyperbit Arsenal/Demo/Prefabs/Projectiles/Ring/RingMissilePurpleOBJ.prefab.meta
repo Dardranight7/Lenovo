@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 053a17a2c6f8d7f4096629a45c76c660
+timeCreated: 1491487347
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Demo/Prefabs/Projectiles/Ring/RingMissilePurpleOBJ.prefab
+  uploadId: 475653

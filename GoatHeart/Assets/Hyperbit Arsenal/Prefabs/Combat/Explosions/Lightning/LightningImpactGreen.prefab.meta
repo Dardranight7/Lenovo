@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e754eef13408dd74b98c1cd6a342e4ac
+timeCreated: 1463877128
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Explosions/Lightning/LightningImpactGreen.prefab
+  uploadId: 475653

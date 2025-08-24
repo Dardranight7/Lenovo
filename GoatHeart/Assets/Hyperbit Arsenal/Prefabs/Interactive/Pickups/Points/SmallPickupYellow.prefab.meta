@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4744b1c696a551e46a2d175d303ecb17
+timeCreated: 1462047482
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Interactive/Pickups/Points/SmallPickupYellow.prefab
+  uploadId: 475653

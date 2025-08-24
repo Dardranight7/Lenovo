@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: d052b9304be2b2546a02cffa1dd4d938
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272976
+  packageName: 'Stellar Trooper: Sci-Fi Characters'
+  packageVersion: 1.0
+  assetPath: Assets/Ida Faber/Shaders/ShaderGraph/IDA_Clothes.shadergraph
+  uploadId: 634096

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7a2a92028b9ef904bb94cb8739f0be75
+timeCreated: 1462214358
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Explosions/Bullet/BulletImpactGreen.prefab
+  uploadId: 475653

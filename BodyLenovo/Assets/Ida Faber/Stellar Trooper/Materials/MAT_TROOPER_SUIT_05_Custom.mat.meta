@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ee76c68fe3840da4eada59a0749cc9e1
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272976
+  packageName: 'Stellar Trooper: Sci-Fi Characters'
+  packageVersion: 1.0
+  assetPath: Assets/Ida Faber/Stellar Trooper/Materials/MAT_TROOPER_SUIT_05_Custom.mat
+  uploadId: 634096

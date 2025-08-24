@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7411808dea16e6846ab22a98607b1d4a
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272976
+  packageName: 'Stellar Trooper: Sci-Fi Characters'
+  packageVersion: 1.0
+  assetPath: Assets/Ida Faber/Shaders/ShaderGraph/legal.md
+  uploadId: 634096

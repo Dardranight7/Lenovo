@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6751816a3cb5ef042ae747b63a79901c
+timeCreated: 1496840633
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Muzzleflash/LaserMuzzle/LaserMuzzleFlashYellow.prefab
+  uploadId: 475653
