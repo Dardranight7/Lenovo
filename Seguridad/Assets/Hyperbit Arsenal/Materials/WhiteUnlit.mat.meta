@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ac7bfc05246e2264b89c19845dc7e9a1
+timeCreated: 1461590361
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Materials/WhiteUnlit.mat
+  uploadId: 475653

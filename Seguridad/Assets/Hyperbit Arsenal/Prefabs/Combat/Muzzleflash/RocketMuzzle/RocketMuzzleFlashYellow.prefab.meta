@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f61f6a063bd40374a805850e0a45e2c8
+timeCreated: 1463495870
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Muzzleflash/RocketMuzzle/RocketMuzzleFlashYellow.prefab
+  uploadId: 475653

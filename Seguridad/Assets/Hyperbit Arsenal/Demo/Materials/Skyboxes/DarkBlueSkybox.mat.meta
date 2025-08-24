@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0874ebb561897264f90325c099b9f277
+timeCreated: 1496857108
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Demo/Materials/Skyboxes/DarkBlueSkybox.mat
+  uploadId: 475653

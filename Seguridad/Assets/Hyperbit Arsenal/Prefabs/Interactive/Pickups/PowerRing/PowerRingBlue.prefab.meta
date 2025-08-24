@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 96846ee32f4ef0449b5ede19f50e0afd
+timeCreated: 1462801402
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Interactive/Pickups/PowerRing/PowerRingBlue.prefab
+  uploadId: 475653

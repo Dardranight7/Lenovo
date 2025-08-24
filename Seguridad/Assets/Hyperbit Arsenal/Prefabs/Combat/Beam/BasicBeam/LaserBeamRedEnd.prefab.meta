@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9c152bfea432fa34e90c1d24f921cfa8
+timeCreated: 1491057522
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Beam/BasicBeam/LaserBeamRedEnd.prefab
+  uploadId: 475653

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f652d140efe9ada4094a7e7366d0cab2
+timeCreated: 1463315089
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Missiles/Sparkle/SparkleMissileRed.prefab
+  uploadId: 475653

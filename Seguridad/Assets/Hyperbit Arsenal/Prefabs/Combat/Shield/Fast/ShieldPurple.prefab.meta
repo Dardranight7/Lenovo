@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d1ccbd58f399ec8428bddf881127ce06
+timeCreated: 1463320901
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Shield/Fast/ShieldPurple.prefab
+  uploadId: 475653

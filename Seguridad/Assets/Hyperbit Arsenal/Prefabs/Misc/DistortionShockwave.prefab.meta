@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d6b2c8e7f181c0a42880ae00cb66e461
+timeCreated: 1463069900
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Misc/DistortionShockwave.prefab
+  uploadId: 475653

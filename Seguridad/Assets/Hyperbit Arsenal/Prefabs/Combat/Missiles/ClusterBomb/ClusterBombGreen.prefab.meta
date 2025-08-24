@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d3b6cb32d7a1d794f931b6783f18da54
+timeCreated: 1463145832
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Missiles/ClusterBomb/ClusterBombGreen.prefab
+  uploadId: 475653

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dab8982a792e89e48b2e6fb49d6de5b6
+timeCreated: 1463319357
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Demo/Prefabs/Projectiles/Missiles/Sphere/SphereMissileYellowOBJ.prefab
+  uploadId: 475653

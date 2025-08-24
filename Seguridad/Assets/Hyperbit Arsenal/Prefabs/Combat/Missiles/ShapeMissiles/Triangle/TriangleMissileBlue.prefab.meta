@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7e2e254f44ecbe14c9b01c4b5fd075c5
+timeCreated: 1461939377
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Missiles/ShapeMissiles/Triangle/TriangleMissileBlue.prefab
+  uploadId: 475653

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 88232674989f66b43afbf440a2ec7caa
+timeCreated: 1463243827
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/HexagonBlast/HexagonBlastPurple.prefab
+  uploadId: 475653

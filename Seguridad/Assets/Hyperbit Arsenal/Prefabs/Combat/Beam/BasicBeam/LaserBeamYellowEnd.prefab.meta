@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: da786fee67a5b1941805c70e43963d43
+timeCreated: 1491057845
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Beam/BasicBeam/LaserBeamYellowEnd.prefab
+  uploadId: 475653

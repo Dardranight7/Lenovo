@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fa40022329810684eb5c5844b5a127ff
+timeCreated: 1463939735
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Shield/Soft/ShieldSoftGreen.prefab
+  uploadId: 475653

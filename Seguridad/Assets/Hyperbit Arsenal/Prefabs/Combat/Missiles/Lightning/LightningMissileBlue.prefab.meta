@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5902dd69f9cb82c4399b362a89ab1049
+timeCreated: 1463873818
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Missiles/Lightning/LightningMissileBlue.prefab
+  uploadId: 475653

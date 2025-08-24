@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 15eedd8d834a01746928f3f35722bf07
+timeCreated: 1463320250
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Materials/GlowRingSharp.mat
+  uploadId: 475653

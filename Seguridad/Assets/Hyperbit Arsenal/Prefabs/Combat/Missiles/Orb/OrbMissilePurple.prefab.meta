@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9e687d3425ccf854b8f8c00d079dc66a
+timeCreated: 1491497645
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Missiles/Orb/OrbMissilePurple.prefab
+  uploadId: 475653

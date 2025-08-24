@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b8c3e0cda0120a741aac4bbdc3ebc848
+timeCreated: 1463940923
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Shield/Hit/ShieldHitPurple.prefab
+  uploadId: 475653

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ea2df6ec88ccc264fbd7fe97341260ab
+timeCreated: 1463146102
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Missiles/EnergyBox/EnergyBoxRed.prefab
+  uploadId: 475653

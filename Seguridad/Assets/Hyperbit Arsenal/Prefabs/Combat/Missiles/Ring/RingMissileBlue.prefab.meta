@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5b06dfe58e6eaf44ba4da213f2bda22f
+timeCreated: 1491486425
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Missiles/Ring/RingMissileBlue.prefab
+  uploadId: 475653

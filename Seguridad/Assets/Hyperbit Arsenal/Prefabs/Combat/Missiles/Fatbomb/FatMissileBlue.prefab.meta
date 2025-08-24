@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d671f167a4bf74f4db2304f6d2385e22
+timeCreated: 1463868852
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Missiles/Fatbomb/FatMissileBlue.prefab
+  uploadId: 475653

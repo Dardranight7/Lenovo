@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bb63e76497bfc85488fa5b17befe73f2
+timeCreated: 1462046715
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Interactive/Pickups/Points/SmallPickupRed.prefab
+  uploadId: 475653

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f94680a7a91aaa44cb0708b1ffaf6f56
+timeCreated: 1461939263
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Demo/Prefabs/Projectiles/Missiles/Sphere/SphereMissileBlueOBJ.prefab
+  uploadId: 475653

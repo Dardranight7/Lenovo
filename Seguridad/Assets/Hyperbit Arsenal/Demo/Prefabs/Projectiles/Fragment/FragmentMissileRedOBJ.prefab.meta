@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5834e3b74983c5c4f9517340b3ed645c
+timeCreated: 1491488108
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Demo/Prefabs/Projectiles/Fragment/FragmentMissileRedOBJ.prefab
+  uploadId: 475653

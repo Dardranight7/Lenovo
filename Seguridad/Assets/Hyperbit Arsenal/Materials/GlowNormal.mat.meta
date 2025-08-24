@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dee86262178bdc849994e61d70cf43af
+timeCreated: 1461625680
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Materials/GlowNormal.mat
+  uploadId: 475653

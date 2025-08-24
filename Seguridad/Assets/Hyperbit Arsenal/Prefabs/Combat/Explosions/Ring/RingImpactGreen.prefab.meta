@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b6672fd7c07386448a8109d060657011
+timeCreated: 1491486228
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Explosions/Ring/RingImpactGreen.prefab
+  uploadId: 475653

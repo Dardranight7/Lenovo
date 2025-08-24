@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4d689ec7539726746bffe079566ee56f
+timeCreated: 1463942160
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Environment/Zones/FloorZone/FloorZoneRed.prefab
+  uploadId: 475653

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5f25587849cf40b40bd866197dab9611
+timeCreated: 1491486454
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Missiles/Ring/RingMissileYellow.prefab
+  uploadId: 475653

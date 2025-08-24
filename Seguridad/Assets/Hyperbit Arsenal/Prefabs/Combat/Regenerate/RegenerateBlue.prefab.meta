@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ebf2c4f8191e66041903f98647f12886
+timeCreated: 1463229795
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Regenerate/RegenerateBlue.prefab
+  uploadId: 475653

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 56ab1c508ea9e90429e6d2b80a500d7c
+timeCreated: 1496778889
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Muzzleflash/RingMuzzle/RingMuzzleFlashGreen.prefab
+  uploadId: 475653

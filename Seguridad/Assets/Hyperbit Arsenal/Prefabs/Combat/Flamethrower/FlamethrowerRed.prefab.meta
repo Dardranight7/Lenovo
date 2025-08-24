@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5cbf74276b2bb9a43a4990f84685f4af
+timeCreated: 1463751141
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Flamethrower/FlamethrowerRed.prefab
+  uploadId: 475653

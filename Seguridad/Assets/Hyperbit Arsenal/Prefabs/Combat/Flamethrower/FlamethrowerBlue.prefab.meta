@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9cafd32fee5626744b3f0bcbccb8498c
+timeCreated: 1463751143
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Flamethrower/FlamethrowerBlue.prefab
+  uploadId: 475653

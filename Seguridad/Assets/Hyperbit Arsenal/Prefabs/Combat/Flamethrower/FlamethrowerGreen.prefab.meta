@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fb7abd8699fb12e4aa0d9c61dd3a11d9
+timeCreated: 1463751140
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Flamethrower/FlamethrowerGreen.prefab
+  uploadId: 475653
