@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8c895343a04dc014893ba46d1dcdd887
+timeCreated: 1463877197
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Demo/Prefabs/Projectiles/Lightning/LightningMissileRedOBJ.prefab
+  uploadId: 475653

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 92745f177af4f5d4a8797f2e43c30535
+timeCreated: 1462755447
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Interactive/Powerups/Holographic/PowerupEnergy.prefab
+  uploadId: 475653

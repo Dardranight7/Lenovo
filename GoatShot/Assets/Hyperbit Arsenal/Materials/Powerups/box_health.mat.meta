@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fd5005c13defb5b40bd7399507f32206
+timeCreated: 1462380599
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Materials/Powerups/box_health.mat
+  uploadId: 475653

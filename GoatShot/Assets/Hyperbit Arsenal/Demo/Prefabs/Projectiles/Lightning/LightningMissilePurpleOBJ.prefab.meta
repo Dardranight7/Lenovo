@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 89acccfa37332164c8845ff293d53f6c
+timeCreated: 1463877198
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Demo/Prefabs/Projectiles/Lightning/LightningMissilePurpleOBJ.prefab
+  uploadId: 475653

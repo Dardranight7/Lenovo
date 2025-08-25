@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ad6b6126118de4f40884d2197bfd52ec
+timeCreated: 1463163340
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Explosions/ShapeExplosion/Triangle/TriangleExplosionPurple.prefab
+  uploadId: 475653

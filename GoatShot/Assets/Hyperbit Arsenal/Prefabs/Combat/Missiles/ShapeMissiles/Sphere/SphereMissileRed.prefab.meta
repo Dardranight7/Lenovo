@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a26eed781d03fa24e805b7abb451e247
+timeCreated: 1463315849
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Missiles/ShapeMissiles/Sphere/SphereMissileRed.prefab
+  uploadId: 475653

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f524178ed8564664ba9609bd31773054
+timeCreated: 1463236801
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Interactive/Pickups/Explosions/SmallPickupExplodeGreen.prefab
+  uploadId: 475653

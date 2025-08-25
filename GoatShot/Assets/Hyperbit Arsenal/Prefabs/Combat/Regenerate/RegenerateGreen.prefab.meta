@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d6e02ab0980258748987b6fec2e74384
+timeCreated: 1463229868
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Regenerate/RegenerateGreen.prefab
+  uploadId: 475653

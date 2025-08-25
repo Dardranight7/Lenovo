@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 48cda5b51db758b44aa5bc5f06b2c183
+timeCreated: 1463753615
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Warp/WarpGreen.prefab
+  uploadId: 475653

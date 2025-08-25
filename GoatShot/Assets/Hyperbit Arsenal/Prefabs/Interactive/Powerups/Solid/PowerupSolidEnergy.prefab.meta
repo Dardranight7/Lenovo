@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0361b6ef168cef5429853c4907a7b02b
+timeCreated: 1463850151
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Interactive/Powerups/Solid/PowerupSolidEnergy.prefab
+  uploadId: 475653

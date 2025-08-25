@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 31394570ad747e6428ee7c489f0b2143
+timeCreated: 1463849882
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Materials/Powerups/solidbox_health.mat
+  uploadId: 475653

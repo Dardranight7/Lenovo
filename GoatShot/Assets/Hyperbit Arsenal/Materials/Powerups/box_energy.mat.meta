@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 47d54d1f925c25c46ae96129258e30ec
+timeCreated: 1462379620
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Materials/Powerups/box_energy.mat
+  uploadId: 475653

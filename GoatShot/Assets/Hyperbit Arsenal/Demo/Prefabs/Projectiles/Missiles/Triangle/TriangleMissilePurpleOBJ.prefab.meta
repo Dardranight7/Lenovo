@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7a1375cf1f2f6df498042fcdaa938c42
+timeCreated: 1463319460
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Demo/Prefabs/Projectiles/Missiles/Triangle/TriangleMissilePurpleOBJ.prefab
+  uploadId: 475653

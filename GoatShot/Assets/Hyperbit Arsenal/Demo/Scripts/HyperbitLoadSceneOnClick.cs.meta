@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 9e33b302a2a6cac4b97b2b6737ecac32
+timeCreated: 1496600946
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Demo/Scripts/HyperbitLoadSceneOnClick.cs
+  uploadId: 475653

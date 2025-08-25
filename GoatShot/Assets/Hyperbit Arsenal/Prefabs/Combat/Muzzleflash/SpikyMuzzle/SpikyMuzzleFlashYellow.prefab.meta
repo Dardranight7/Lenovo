@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 04cbe6683ad363c40bc6d53c9d885329
+timeCreated: 1463495250
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Muzzleflash/SpikyMuzzle/SpikyMuzzleFlashYellow.prefab
+  uploadId: 475653

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dc096a67ab7bee64ea0bfe0628a90fbf
+timeCreated: 1496846271
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Muzzleflash/FatMuzzle/FatMuzzleFlashYellow.prefab
+  uploadId: 475653

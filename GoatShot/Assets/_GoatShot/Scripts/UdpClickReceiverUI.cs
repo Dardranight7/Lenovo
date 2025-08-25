@@ -14,8 +14,6 @@ using System.Collections.Generic;
 public class GoalMessage
 {
     public int[] pixel_coordinates; // [x, y]
-    public bool is_goal;
-    public string status;
 }
 
 public class UdpClickReceiverUI : MonoBehaviour
@@ -79,6 +77,7 @@ public class UdpClickReceiverUI : MonoBehaviour
             var m = Input.mousePosition;
             debugX = (int)m.x;
             debugY = (int)m.y;
+            SimulateMessage();
             Debug.Log($"[DEBUG] Cursor capturado: X={debugX}, Y={debugY}");
         }
 
@@ -91,7 +90,7 @@ public class UdpClickReceiverUI : MonoBehaviour
             int x = msg.pixel_coordinates[0];
             int y = msg.pixel_coordinates[1];
 
-            Debug.Log($"[UI] Simular click en: ({x},{y}) - {msg.status}");
+            Debug.Log($"[UI] Simular click en: ({x},{y})");
             SimulateUIClick(new Vector2(x, y));
         }
     }
@@ -107,6 +106,8 @@ public class UdpClickReceiverUI : MonoBehaviour
             Debug.LogWarning("[UI] No hay EventSystem en la escena. Agrega uno (EventSystem + *InputModule).");
             return;
         }
+
+        PrefabSpawner.SpawnAtScreenPosition(screenPosition);
 
         var pointerData = new PointerEventData(EventSystem.current)
         {
@@ -166,8 +167,6 @@ public class UdpClickReceiverUI : MonoBehaviour
         var fakeMsg = new GoalMessage
         {
             pixel_coordinates = new[] { debugX, debugY },
-            is_goal = true,
-            status = debugStatus
         };
 
         Debug.Log($"[DEBUG] Encolando mensaje simulado en ({debugX}, {debugY}) - {debugStatus}");

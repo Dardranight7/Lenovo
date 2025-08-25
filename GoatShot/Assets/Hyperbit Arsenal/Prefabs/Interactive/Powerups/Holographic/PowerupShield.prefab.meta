@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6821ad6df12f689468bd912e29582716
+timeCreated: 1462755445
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Interactive/Powerups/Holographic/PowerupShield.prefab
+  uploadId: 475653

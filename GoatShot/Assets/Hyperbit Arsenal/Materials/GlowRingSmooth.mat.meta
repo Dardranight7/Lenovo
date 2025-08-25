@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1df540123fe151d46895a088e9a21b67
+timeCreated: 1463849318
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Materials/GlowRingSmooth.mat
+  uploadId: 475653

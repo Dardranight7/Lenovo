@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 80310ec24175e254880aa5bb4c6564cb
+timeCreated: 1463940991
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Shield/Hit/ShieldHitYellow.prefab
+  uploadId: 475653

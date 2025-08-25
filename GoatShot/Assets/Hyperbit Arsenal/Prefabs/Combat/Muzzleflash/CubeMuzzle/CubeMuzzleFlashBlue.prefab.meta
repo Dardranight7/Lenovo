@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7948bcf0a522a3444bdd9609f60f9934
+timeCreated: 1496773206
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Prefabs/Combat/Muzzleflash/CubeMuzzle/CubeMuzzleFlashBlue.prefab
+  uploadId: 475653

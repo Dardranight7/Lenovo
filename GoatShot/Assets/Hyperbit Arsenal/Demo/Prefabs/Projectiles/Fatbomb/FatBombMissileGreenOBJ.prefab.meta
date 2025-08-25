@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ed89399ca58909c449fdb054a2d790ee
+timeCreated: 1463870736
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Demo/Prefabs/Projectiles/Fatbomb/FatBombMissileGreenOBJ.prefab
+  uploadId: 475653

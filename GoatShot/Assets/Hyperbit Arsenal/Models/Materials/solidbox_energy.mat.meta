@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2ce56a2ea0f290948b13b9adce5cd57a
+timeCreated: 1463848778
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63274
+  packageName: Hyperbit Arsenal
+  packageVersion: 1.3
+  assetPath: Assets/Hyperbit Arsenal/Models/Materials/solidbox_energy.mat
+  uploadId: 475653
