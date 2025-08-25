@@ -2332,6 +2332,7 @@ MonoBehaviour:
   - {fileID: 1894094605}
   - {fileID: 104391456}
   - {fileID: 101853780}
+  reloadScene: 0
 --- !u!224 &526493935
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5279,7 +5280,7 @@ MonoBehaviour:
   alignmentBoneLength: 1
   boneLengthType: 1
   smoothMove: 0.5
-  alignStraightLegs: 0
+  alignStraightLegs: 1
   straightLegsThresold: 0.14
   hideDistance: 1.5
   meshObject: {fileID: 0}

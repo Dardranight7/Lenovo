@@ -48,6 +48,9 @@ public class PrefabSpawner : MonoBehaviour
         obj.SetActive(true);
 
         // Volver a ponerlo al final de la cola (para reciclar)
+        
         instance.pool.Enqueue(obj);
     }
+
+    
 }
