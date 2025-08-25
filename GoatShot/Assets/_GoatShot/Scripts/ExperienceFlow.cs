@@ -9,7 +9,7 @@ public class ExperienceFlow : MonoBehaviour
     void Start()
     {
         EnableIndex(0); // Enable the first step by default
-        Screen.SetResolution(1080, 1920, true); // Set the screen resolution to 1080x1920
+        //Screen.SetResolution(1080, 1920, true); // Set the screen resolution to 1080x1920
     }
 
     public void Next()
