@@ -110,6 +110,7 @@ public class DeffenseMinigame : MonoBehaviour
     public TextMeshProUGUI timerText;
     bool doOnce = true; // Flag to ensure the game loop starts only once
 
+    public List<GameObject> touchPoints = new List<GameObject>();
     IEnumerator GameLoop()
     {
         float gameDuration = 60f; // Duration of the game in seconds

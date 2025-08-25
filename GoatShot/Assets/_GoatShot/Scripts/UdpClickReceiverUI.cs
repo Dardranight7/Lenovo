@@ -13,7 +13,7 @@ using System.Collections.Generic;
 [System.Serializable]
 public class GoalMessage
 {
-    public int[] pixel_coordinates; // [x, y]
+    public List<int> pixel_coordinates; // [x, y]
 }
 
 public class UdpClickReceiverUI : MonoBehaviour
@@ -21,7 +21,6 @@ public class UdpClickReceiverUI : MonoBehaviour
     private UdpClient udpClient;
     private Thread receiveThread;
 
-    // Cola thread-safe para pasar mensajes al main thread
     private readonly ConcurrentQueue<GoalMessage> messageQueue = new ConcurrentQueue<GoalMessage>();
 
     [Header("UDP Settings")]
@@ -71,7 +70,6 @@ public class UdpClickReceiverUI : MonoBehaviour
 
     void Update()
     {
-        // Capturar posición real del cursor en debug con clic de rueda (opcional)
         if (Input.GetMouseButtonDown(2))
         {
             var m = Input.mousePosition;
@@ -81,10 +79,9 @@ public class UdpClickReceiverUI : MonoBehaviour
             Debug.Log($"[DEBUG] Cursor capturado: X={debugX}, Y={debugY}");
         }
 
-        // Procesar mensajes pendientes (main thread)
         while (messageQueue.TryDequeue(out var msg))
         {
-            if (msg?.pixel_coordinates == null || msg.pixel_coordinates.Length < 2)
+            if (msg?.pixel_coordinates == null || msg.pixel_coordinates.Count < 2)
                 continue;
 
             int x = msg.pixel_coordinates[0];
@@ -95,10 +92,6 @@ public class UdpClickReceiverUI : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Simula un click de UI en coordenadas de pantalla (sin invertir Y para Screen Space - Overlay).
-    /// Ejecuta pointerDown -> pointerUp -> pointerClick sobre el primer objeto con IPointerClickHandler.
-    /// </summary>
     void SimulateUIClick(Vector2 screenPosition)
     {
         if (EventSystem.current == null)
@@ -118,7 +111,6 @@ public class UdpClickReceiverUI : MonoBehaviour
             pressPosition = screenPosition
         };
 
-        // Raycast UI (usa todos los GraphicRaycaster activos)
         var results = new List<RaycastResult>();
         EventSystem.current.RaycastAll(pointerData, results);
 
@@ -128,7 +120,6 @@ public class UdpClickReceiverUI : MonoBehaviour
             return;
         }
 
-        // Busca el primer objeto en la jerarquía que maneje IPointerClickHandler
         GameObject target = null;
         RaycastResult targetRaycast = default;
 
@@ -149,11 +140,9 @@ public class UdpClickReceiverUI : MonoBehaviour
             return;
         }
 
-        // Completar datos de raycast en el PointerEventData
         pointerData.pointerCurrentRaycast = targetRaycast;
         pointerData.pointerPressRaycast = targetRaycast;
 
-        // Secuencia típica de click
         ExecuteEvents.Execute(target, pointerData, ExecuteEvents.pointerEnterHandler);
         ExecuteEvents.Execute(target, pointerData, ExecuteEvents.pointerDownHandler);
         ExecuteEvents.Execute(target, pointerData, ExecuteEvents.pointerUpHandler);
@@ -166,7 +155,7 @@ public class UdpClickReceiverUI : MonoBehaviour
     {
         var fakeMsg = new GoalMessage
         {
-            pixel_coordinates = new[] { debugX, debugY },
+            pixel_coordinates = new List<int>{ debugX, debugY },
         };
 
         Debug.Log($"[DEBUG] Encolando mensaje simulado en ({debugX}, {debugY}) - {debugStatus}");
