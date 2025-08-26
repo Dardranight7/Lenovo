@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CounterTarget : MonoBehaviour, IPointerDownHandler
+public class CounterTarget : MonoBehaviour, IPointerClickHandler
 {
     [HideInInspector] public float lifeTime;
     [HideInInspector] public float maxLifeTime = 4f;
@@ -48,7 +48,7 @@ public class CounterTarget : MonoBehaviour, IPointerDownHandler
         badView.SetActive(false);
     }
 
-    public void OnPointerDown(PointerEventData eventData)
+    public void OnPointerClick(PointerEventData eventData)
     {
         if (beTouched)
             return; // Si ya ha sido tocado, no hacer nada más
@@ -56,6 +56,4 @@ public class CounterTarget : MonoBehaviour, IPointerDownHandler
         beTouched = true;
         touchedtime = Time.time + 1f; // Mostrar 2 segundos
     }
-
-
 }

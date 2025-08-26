@@ -434,6 +434,11 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
+--- !u!1 &80894140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1759843457429978052, guid: de750066213e9d447aeed012676037c9, type: 3}
+  m_PrefabInstance: {fileID: 417420447}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &80894141 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 61303543061778551, guid: de750066213e9d447aeed012676037c9, type: 3}
@@ -560,8 +565,8 @@ GameObject:
   - component: {fileID: 149387592}
   - component: {fileID: 149387595}
   - component: {fileID: 149387594}
-  - component: {fileID: 149387593}
   - component: {fileID: 149387596}
+  - component: {fileID: 149387597}
   m_Layer: 5
   m_Name: SpawnZone
   m_TagString: Untagged
@@ -590,24 +595,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -658.5}
-  m_SizeDelta: {x: 1031, y: 407}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1031, y: 1920}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &149387593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149387591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fb835c58981d384493c89f127845791, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnAreaClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &149387594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -621,7 +611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 70528298}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.12156863}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -658,6 +648,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07afba72913387d488019cbb35ec1965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &149387597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149387591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29150ceb01e2ce043840ee8bab19df9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPutShield:
+    m_PersistentCalls:
+      m_Calls: []
+  Shields:
+  - {fileID: 348339142}
+  - {fileID: 1752804896}
+  - {fileID: 369471765}
+  - {fileID: 80894140}
 --- !u!1001 &156988362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2161,6 +2171,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346418532}
   m_CullTransparentMesh: 1
+--- !u!1 &348339142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1759843457429978052, guid: de750066213e9d447aeed012676037c9, type: 3}
+  m_PrefabInstance: {fileID: 1467892306056151577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &369471765 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1759843457429978052, guid: de750066213e9d447aeed012676037c9, type: 3}
+  m_PrefabInstance: {fileID: 880369530}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &369471766 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 61303543061778551, guid: de750066213e9d447aeed012676037c9, type: 3}
@@ -2715,7 +2735,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -11, y: -552}
-  m_SizeDelta: {x: 110.31, y: 128.9159}
+  m_SizeDelta: {x: 149.68, y: 174.9212}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &521010213
 MonoBehaviour:
@@ -3026,7 +3046,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &589858982
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3088,7 +3108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f0f65c87a31b8349bd1554dbdb23d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnZone: {fileID: 149387593}
+  spawnZone: {fileID: 149387597}
   parent: {fileID: 253672856}
   shieldPrefab: {fileID: 1759843457429978052, guid: de750066213e9d447aeed012676037c9, type: 3}
   enemyPrefab: {fileID: 6216744818097794905, guid: 1439d5119b65d1c47a5001a29b35442a, type: 3}
@@ -6628,6 +6648,11 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!1 &1752804896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1759843457429978052, guid: de750066213e9d447aeed012676037c9, type: 3}
+  m_PrefabInstance: {fileID: 156988362}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1752804897 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 61303543061778551, guid: de750066213e9d447aeed012676037c9, type: 3}
@@ -7059,7 +7084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -7290,7 +7315,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 754}
+  m_AnchoredPosition: {x: 0, y: -385.45}
   m_SizeDelta: {x: 794.4957, y: 248.8264}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1932799127
@@ -7307,7 +7332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.7647059}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

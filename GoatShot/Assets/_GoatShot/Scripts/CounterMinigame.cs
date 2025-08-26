@@ -29,9 +29,13 @@ public class CounterMinigame : MonoBehaviour
         OnCounterTouched += ReadCounterTarget;
     }
 
-    private void OnEnable()
+    private void Awake()
     {
         CreatePool();
+    }
+
+    private void OnEnable()
+    {
         gameLoop = StartCoroutine(GameRoutine());
     }
 
@@ -75,6 +79,7 @@ public class CounterMinigame : MonoBehaviour
 
     private IEnumerator GameRoutine()
     {
+        excelent = good = bad = 0;
         elapsedTime = 0;
         while (elapsedTime < gameDuration)
         {

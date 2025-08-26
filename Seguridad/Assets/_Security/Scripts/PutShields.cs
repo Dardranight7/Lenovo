@@ -13,9 +13,8 @@ public class PutShields : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         if (index >= Shields.Count) return;
-        index++;
         Shields[index].SetActive(true);
+        index++;
+        OnPutShield.Invoke();
     }
-
-
 }

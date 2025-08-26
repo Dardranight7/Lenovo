@@ -1,0 +1,81 @@
+using System.Collections.Generic;
+using System.Collections;
+using TMPro;
+using UnityEngine;
+
+public class AvatarGenerator : MonoBehaviour
+{
+    public bool LoadFromCode = false;
+    public string code;
+    public RandomizeCharacter Male, Female;
+    public TextMeshProUGUI CodeText;
+    public List<AvatarGenerator> SlaveAvatar;
+
+    private void OnEnable()
+    {
+        StartCoroutine(LoadAvatar());
+    }
+
+    IEnumerator LoadAvatar()
+    {
+        Male.gameObject.SetActive(true);
+        Female.gameObject.SetActive(true);
+        bool isMale;
+        if (LoadFromCode)
+        {
+            isMale = (int)code[0] == 0;
+            code = code.Remove(0);
+        }
+        else
+        {
+            isMale = Random.Range(0, 2) == 0;
+        }
+        if (isMale)
+        {
+            Male.gameObject.SetActive(true);
+            Female.gameObject.SetActive(false);
+        }
+        else
+        {
+            Male.gameObject.SetActive(false);
+            Female.gameObject.SetActive(true);
+        }
+        yield return null;
+        if (LoadFromCode)
+        {
+            if (isMale)
+            {
+                Male.ApplyCharacterFromCode(code);
+            }
+            else
+            {
+                Female.ApplyCharacterFromCode(code);
+            }
+        }
+        else
+        {
+            if (isMale)
+            {
+                if (CodeText != null)
+                    CodeText.text = "0" + Male.currentCode;
+                Female.gameObject.SetActive(false);
+                foreach (var item in SlaveAvatar)
+                {
+                    item.code = "0" + Male.currentCode;
+                    item.LoadFromCode = true;
+                }
+            }
+            else
+            {
+                if (CodeText != null)
+                    CodeText.text = "1" + Female.currentCode;
+                Male.gameObject.SetActive(false);
+                foreach (var item in SlaveAvatar)
+                {
+                    item.code = "1" + Female.currentCode;
+                    item.LoadFromCode = true;
+                }
+            }
+        }
+    }
+}

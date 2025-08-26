@@ -5,6 +5,8 @@ public class ExperienceFlow : MonoBehaviour
 {
     public List<GameObject> experienceSteps; // List of experience steps to be executed in order
     int currentStepIndex = 0; // Index of the current step
+    public bool reloadScene = true;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,8 +18,10 @@ public class ExperienceFlow : MonoBehaviour
     {
         if (currentStepIndex + 1 >= experienceSteps.Count) {
             //Reload the scene
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
-            return; // If there are no more steps, exit the function
+            if (reloadScene)
+                UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            else
+                currentStepIndex = -1;
         }
         EnableIndex(currentStepIndex + 1); // Enable the next step
         currentStepIndex++; // Increment the current step index

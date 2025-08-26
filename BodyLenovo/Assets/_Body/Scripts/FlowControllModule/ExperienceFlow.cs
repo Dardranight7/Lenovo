@@ -5,8 +5,9 @@ public class ExperienceFlow : MonoBehaviour
 {
     public List<GameObject> experienceSteps; // List of experience steps to be executed in order
     int currentStepIndex = 0; // Index of the current step
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public bool reloadScene = true;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         EnableIndex(0); // Enable the first step by default

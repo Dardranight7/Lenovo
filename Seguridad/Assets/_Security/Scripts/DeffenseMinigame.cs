@@ -6,7 +6,7 @@ using TMPro;
 
 public class DeffenseMinigame : MonoBehaviour
 {
-    public TouchableArea spawnZone; // The spawn zone for the enemies
+    public PutShields spawnZone; // The spawn zone for the enemies
     [SerializeField] Transform parent;
     [SerializeField] GameObject shieldPrefab, enemyPrefab, virusPrefab, player;
     List<GameObject> shields = new List<GameObject>();
@@ -58,7 +58,7 @@ public class DeffenseMinigame : MonoBehaviour
 
     private void Start()
     {
-        spawnZone.OnAreaClick.AddListener(PlaceShield);
+        spawnZone.OnPutShield.AddListener(SumarEscudos);
         StartGame();
 
         Screen.SetResolution(1080, 1920, true);
@@ -66,7 +66,12 @@ public class DeffenseMinigame : MonoBehaviour
 
     private void OnDestroy()
     {
-        spawnZone.OnAreaClick.RemoveListener(PlaceShield);
+        spawnZone.OnPutShield.RemoveListener(SumarEscudos);
+    }
+
+    public void SumarEscudos()
+    {
+        currentShields++;
     }
 
     public void PlaceShield(PointerEventData pointerEvent)

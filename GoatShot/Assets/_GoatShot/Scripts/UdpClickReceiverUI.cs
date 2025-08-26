@@ -70,14 +70,14 @@ public class UdpClickReceiverUI : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(2))
-        {
-            var m = Input.mousePosition;
-            debugX = (int)m.x;
-            debugY = (int)m.y;
-            SimulateMessage();
-            Debug.Log($"[DEBUG] Cursor capturado: X={debugX}, Y={debugY}");
-        }
+        //if (Time.frameCount % 200 == 0)
+        //{
+        //    var m = Input.mousePosition;
+        //    debugX = (int)m.x;
+        //    debugY = (int)m.y;
+        //    SimulateMessage();
+        //    Debug.Log($"[DEBUG] Cursor capturado: X={debugX}, Y={debugY}");
+        //}
 
         while (messageQueue.TryDequeue(out var msg))
         {
