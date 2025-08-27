@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bd938d2919b66c34cbd3e8a5b3700965
+timeCreated: 1468856088
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.23
+  assetPath: Assets/K2Examples/KinectDemos/PhysicsDemo/KinectPhysicsDemo.unity
+  uploadId: 697424

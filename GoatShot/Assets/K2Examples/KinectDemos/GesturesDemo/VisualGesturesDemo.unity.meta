@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e0a3641667a0af64496558a9b1119fec
+timeCreated: 1473950218
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.23
+  assetPath: Assets/K2Examples/KinectDemos/GesturesDemo/VisualGesturesDemo.unity
+  uploadId: 697424

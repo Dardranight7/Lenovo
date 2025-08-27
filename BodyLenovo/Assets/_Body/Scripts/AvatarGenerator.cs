@@ -10,25 +10,29 @@ public class AvatarGenerator : MonoBehaviour
     public RandomizeCharacter Male, Female;
     public TextMeshProUGUI CodeText;
     public List<AvatarGenerator> SlaveAvatar;
+    public bool IsMale;
 
     private void OnEnable()
     {
         StartCoroutine(LoadAvatar());
     }
 
+    public void SetGenre(bool genre)
+    {
+        IsMale = genre;
+        Debug.Log(genre ? "Es hombre" : "Es mujer");
+    }
+
     IEnumerator LoadAvatar()
     {
         Male.gameObject.SetActive(true);
         Female.gameObject.SetActive(true);
-        bool isMale;
+        bool isMale = IsMale;
+        Debug.Log(isMale ? "Es hombre" : "Es mujer");
         if (LoadFromCode)
         {
             isMale = (int)code[0] == 0;
             code = code.Remove(0);
-        }
-        else
-        {
-            isMale = Random.Range(0, 2) == 0;
         }
         if (isMale)
         {

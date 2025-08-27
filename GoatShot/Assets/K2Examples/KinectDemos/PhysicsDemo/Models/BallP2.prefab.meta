@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 058f9ab9fbf99804f83e74199d07ba22
+timeCreated: 1471714807
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.23
+  assetPath: Assets/K2Examples/KinectDemos/PhysicsDemo/Models/BallP2.prefab
+  uploadId: 697424

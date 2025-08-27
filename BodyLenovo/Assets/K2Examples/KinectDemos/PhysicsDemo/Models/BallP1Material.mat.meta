@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7f12df9a9ef0cab4c8e9bcd04911d01b
+timeCreated: 1471714812
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.23
+  assetPath: Assets/K2Examples/KinectDemos/PhysicsDemo/Models/BallP1Material.mat
+  uploadId: 697424

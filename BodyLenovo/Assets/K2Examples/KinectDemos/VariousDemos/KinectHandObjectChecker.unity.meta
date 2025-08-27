@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: be91a80f38d27f948aef6f884c6438bc
+timeCreated: 1481901447
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 18708
+  packageName: Kinect v2 Examples with MS-SDK
+  packageVersion: 2.23
+  assetPath: Assets/K2Examples/KinectDemos/VariousDemos/KinectHandObjectChecker.unity
+  uploadId: 697424

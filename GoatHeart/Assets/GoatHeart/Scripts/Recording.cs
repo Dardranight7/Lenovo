@@ -15,6 +15,8 @@ public class Recording : MonoBehaviour
     private Texture2D frameTexture;
     private bool isRecording = false;
 
+    public VideoUploader videoUploader; // Referencia al VideoUploader
+
     void Start()
     {
         Application.runInBackground = true;
@@ -26,6 +28,8 @@ public class Recording : MonoBehaviour
     {
         if (isRecording) return;
 
+        int index = PlayerPrefs.GetInt("videoIndex", 0);
+        outputFileName = "video" + index.ToString() + ".mp4";
         // Crear el Texture2D para leer datos
         frameTexture = new Texture2D(targetTexture.width, targetTexture.height, TextureFormat.RGB24, false);
 
@@ -62,6 +66,8 @@ public class Recording : MonoBehaviour
             ffmpegStream.Close();
             ffmpegProcess.WaitForExit();
             ffmpegProcess.Close();
+
+            videoUploader.UploadAndGenerateQR(); // Llama al método para subir el video y generar el QR
             UnityEngine.Debug.Log("✅ Grabación finalizada: " + outputFileName);
         }
         catch (Exception e)
