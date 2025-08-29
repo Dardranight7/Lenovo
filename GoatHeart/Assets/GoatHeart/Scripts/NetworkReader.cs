@@ -15,6 +15,7 @@ public class NetworkReader : MonoBehaviour
     private bool running = false;
 
     public UnityEvent<string> OnBpmChange;
+    public UnityEvent<string> OnSaturationChange;
     public int listenPort = 5067; // mismo puerto que en el Python
 
     // Cola thread-safe para mensajes entrantes
@@ -27,6 +28,7 @@ public class NetworkReader : MonoBehaviour
     {
         public int bpm;
         public float beat_interval;
+        public int spo2;
     }
 
     void Start()
@@ -52,6 +54,17 @@ public class NetworkReader : MonoBehaviour
                 Debug.LogError("❌ Error deserializando JSON: " + ex.Message + "\n" + json);
             }
         }
+    }
+
+    [ContextMenu("Testing Data")]
+    public void TestingData()
+    {
+        ReadData(new BeatData
+        {
+            bpm = UnityEngine.Random.Range(60, 100),
+            beat_interval = UnityEngine.Random.Range(0.5f, 1.0f),
+            spo2 = UnityEngine.Random.Range(90, 100)
+        });
     }
 
     void OnApplicationQuit()
@@ -101,6 +114,7 @@ public class NetworkReader : MonoBehaviour
     {
         Debug.Log($"📥 Data recibida: BPM={data.bpm}, Intervalo={data.beat_interval}");
         OnBpmChange?.Invoke($"{data.bpm} bpm");
+        OnSaturationChange?.Invoke($"{data.spo2} %");
 
         if (hearthBeat != null && hearthBeat.Count > 0)
         {

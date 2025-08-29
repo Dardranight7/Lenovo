@@ -20,7 +20,6 @@ public class Recording : MonoBehaviour
     void Start()
     {
         Application.runInBackground = true;
-        Screen.SetResolution(1080, 1920,true);
     }
 
     [ContextMenu("Start Recording")]
