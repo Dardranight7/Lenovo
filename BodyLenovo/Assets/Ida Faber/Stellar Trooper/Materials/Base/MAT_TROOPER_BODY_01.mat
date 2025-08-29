@@ -66,7 +66,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColor_Map:
-        m_Texture: {fileID: 2800000, guid: 97a1c0af4416aae40936611720c5cedd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7fb22e6e5d55efd4480b2dee7eb05171, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Blood_Mask:
@@ -95,6 +95,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 2800000, guid: 015dde6705b1818429caff2d50baba43, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ExtraBaseColor:
+        m_Texture: {fileID: 2800000, guid: 97a1c0af4416aae40936611720c5cedd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:

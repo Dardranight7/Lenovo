@@ -14,6 +14,11 @@ public class AvatarGenerator : MonoBehaviour
 
     private void OnEnable()
     {
+        TryToLoadAvatar();
+    }
+
+    public void TryToLoadAvatar()
+    {
         StartCoroutine(LoadAvatar());
     }
 
@@ -25,13 +30,17 @@ public class AvatarGenerator : MonoBehaviour
 
     IEnumerator LoadAvatar()
     {
+        if (LoadFromCode && code.Length <= 0)
+        {
+            yield break;
+        }
         Male.gameObject.SetActive(true);
         Female.gameObject.SetActive(true);
         bool isMale = IsMale;
         Debug.Log(isMale ? "Es hombre" : "Es mujer");
         if (LoadFromCode)
         {
-            isMale = (int)code[0] == 0;
+            isMale = code[0] == '0';
             code = code.Remove(0);
         }
         if (isMale)
