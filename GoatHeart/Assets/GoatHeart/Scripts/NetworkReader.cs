@@ -27,8 +27,8 @@ public class NetworkReader : MonoBehaviour
     public class BeatData
     {
         public int bpm;
-        public float beat_interval;
         public int spo2;
+        public float beat_interval;
     }
 
     void Start()

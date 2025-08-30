@@ -1,0 +1,523 @@
+fileFormatVersion: 2
+guid: 851ed0ed3549965429b83e1717daa109
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet ECO3_5
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1234
+        width: 296
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696d7ac348a24714e908c44650181310
+      internalID: -1400565415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet ECO3_6
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 856
+        width: 338
+        height: 456
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170f6863927d97543b0e56f91621df79
+      internalID: 474727594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet ECO3_36
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1175
+        width: 296
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5fbab3191f6b64b8462b57a7930791
+      internalID: 223435033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet ECO3_66
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1026
+        width: 298
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c19a9d545736247870bd9cf1b8633c
+      internalID: 469803461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet ECO3_67
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 934
+        width: 103
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 361f43ef048d62647a7bb83686b96f56
+      internalID: -592999068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet ECO3_68
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 930
+        width: 106
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf03de314bae9a408e054bbc0530e5b
+      internalID: -1094997845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet ECO3_69
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 950
+        width: 298
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c905faa3e3b61fe4dbcd325d38646433
+      internalID: -1314020312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet ECO3_70
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 39
+        width: 402
+        height: 874
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26afc6429a0b41a40b642d3e5fe0e4e2
+      internalID: 1172971310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet ECO3_71
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 868
+        width: 138
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e411061cba86f34a8c495046dffd4cf
+      internalID: -2107369727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet ECO3_72
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 868
+        width: 138
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de9e16ed168f0f44812d46d9f4bc7a6
+      internalID: 1130580631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet ECO3_73
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 29
+        width: 358
+        height: 813
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 28, y: 32, z: 29, w: 27}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5fc9eb0031bd940970c51a97162362
+      internalID: 513337183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet ECO3_74
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 739
+        width: 192
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f46ba461518a6942bdf04817ca22bbc
+      internalID: 759528724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet ECO3_75
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 662
+        width: 192
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023bce7ea8a4a6d4690eb76d965885a6
+      internalID: -546630835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet ECO3_0
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1317
+        width: 145
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a289206ad1b542147967d32d65fb1d5e
+      internalID: -2100199550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 032ddf658e186eb4d86b1a5861d31115
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SpriteSheet ECO3_0: -2100199550
+      SpriteSheet ECO3_1: 1192014202
+      SpriteSheet ECO3_10: -1078375401
+      SpriteSheet ECO3_11: 815400772
+      SpriteSheet ECO3_12: 646065563
+      SpriteSheet ECO3_13: 951381883
+      SpriteSheet ECO3_14: -1569065922
+      SpriteSheet ECO3_15: -1000951862
+      SpriteSheet ECO3_16: -397032742
+      SpriteSheet ECO3_17: -1991918183
+      SpriteSheet ECO3_18: 554806361
+      SpriteSheet ECO3_19: -952972105
+      SpriteSheet ECO3_2: -1966323306
+      SpriteSheet ECO3_20: 2123312136
+      SpriteSheet ECO3_21: 1388786564
+      SpriteSheet ECO3_22: -1497551823
+      SpriteSheet ECO3_23: -1422565328
+      SpriteSheet ECO3_24: -1091115889
+      SpriteSheet ECO3_25: 1024425426
+      SpriteSheet ECO3_26: 1577652574
+      SpriteSheet ECO3_27: 441923603
+      SpriteSheet ECO3_28: -1932335589
+      SpriteSheet ECO3_29: 1862066636
+      SpriteSheet ECO3_3: -1272815858
+      SpriteSheet ECO3_30: -1614511363
+      SpriteSheet ECO3_31: -1261706401
+      SpriteSheet ECO3_32: 824947342
+      SpriteSheet ECO3_33: -234217241
+      SpriteSheet ECO3_34: -186706017
+      SpriteSheet ECO3_35: -1540054191
+      SpriteSheet ECO3_36: 223435033
+      SpriteSheet ECO3_37: -59792405
+      SpriteSheet ECO3_38: 45022162
+      SpriteSheet ECO3_39: -1878977503
+      SpriteSheet ECO3_4: 653857526
+      SpriteSheet ECO3_40: 940413512
+      SpriteSheet ECO3_41: 409129212
+      SpriteSheet ECO3_42: 1791932518
+      SpriteSheet ECO3_43: -367155677
+      SpriteSheet ECO3_44: -66910192
+      SpriteSheet ECO3_45: -1001249986
+      SpriteSheet ECO3_46: -1513185531
+      SpriteSheet ECO3_47: -1669265100
+      SpriteSheet ECO3_48: -1635417295
+      SpriteSheet ECO3_49: -1941636509
+      SpriteSheet ECO3_5: -1400565415
+      SpriteSheet ECO3_50: 2067926207
+      SpriteSheet ECO3_51: -921276841
+      SpriteSheet ECO3_52: 1544939316
+      SpriteSheet ECO3_53: 871449345
+      SpriteSheet ECO3_54: -498754493
+      SpriteSheet ECO3_55: 790185692
+      SpriteSheet ECO3_56: -210611510
+      SpriteSheet ECO3_57: 1265325895
+      SpriteSheet ECO3_58: 280520994
+      SpriteSheet ECO3_59: 1107619662
+      SpriteSheet ECO3_6: 474727594
+      SpriteSheet ECO3_60: 1607582938
+      SpriteSheet ECO3_61: 1248255908
+      SpriteSheet ECO3_62: -236212315
+      SpriteSheet ECO3_63: -354418171
+      SpriteSheet ECO3_64: 1112322561
+      SpriteSheet ECO3_65: -383641296
+      SpriteSheet ECO3_66: 469803461
+      SpriteSheet ECO3_67: -592999068
+      SpriteSheet ECO3_68: -1094997845
+      SpriteSheet ECO3_69: -1314020312
+      SpriteSheet ECO3_7: 855836176
+      SpriteSheet ECO3_70: 1172971310
+      SpriteSheet ECO3_71: -2107369727
+      SpriteSheet ECO3_72: 1130580631
+      SpriteSheet ECO3_73: 513337183
+      SpriteSheet ECO3_74: 759528724
+      SpriteSheet ECO3_75: -546630835
+      SpriteSheet ECO3_8: -241174036
+      SpriteSheet ECO3_9: 1564145568
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
