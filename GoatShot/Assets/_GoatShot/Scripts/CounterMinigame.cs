@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CounterMinigame : MonoBehaviour
 {
@@ -10,7 +13,7 @@ public class CounterMinigame : MonoBehaviour
     [Header("Target Settings")]
     public GameObject prefabCounterTarget;
     public int poolSize = 10;
-    private Queue<GameObject> pool;
+    public List<GameObject> counterPreInstanced = new List<GameObject>();
 
     [Header("Spawn Settings")]
     public RectTransform spawnArea; // Zona delimitada en UI
@@ -18,12 +21,12 @@ public class CounterMinigame : MonoBehaviour
     public float gameDuration = 20f;   // Duración del minijuego
     private float elapsedTime;
 
-    public static System.Action<CounterTarget> OnCounterTouched;
+    public static System.Action<CounterTarget, float> OnCounterTouched;
 
     private Coroutine gameLoop;
 
     public System.Action<int,int, int> OnGameEnd; // excelent, good, bad
-
+    public UnityEvent OnEndGame;
     private void Start()
     {
         OnCounterTouched += ReadCounterTarget;
@@ -37,6 +40,16 @@ public class CounterMinigame : MonoBehaviour
     private void OnEnable()
     {
         gameLoop = StartCoroutine(GameRoutine());
+        List<CounterTarget> targets = counterPreInstanced.Select(a=>a.GetComponent<CounterTarget>()).ToList();
+        foreach (var item in targets)
+        {
+            item.disable = true;
+            item.Init(this,10);
+            item.spriteImage.color = new Color(1, 1, 1, 0.1f);
+        }
+        EnableOne();
+        EnableOne();
+        EnableOne();
     }
 
     private void OnDestroy()
@@ -44,106 +57,96 @@ public class CounterMinigame : MonoBehaviour
         OnCounterTouched -= ReadCounterTarget;
     }
 
+    public List<GameObject> Options;
+
     private void CreatePool()
     {
-        pool = new Queue<GameObject>();
-        for (int i = 0; i < poolSize; i++)
-        {
-            GameObject obj = Instantiate(prefabCounterTarget, spawnArea);
-            obj.SetActive(false);
-            pool.Enqueue(obj);
-        }
+        Options = new List<GameObject>(counterPreInstanced);
     }
 
     private GameObject GetFromPool()
     {
-        if (pool.Count > 0)
-        {
-            GameObject obj = pool.Dequeue();
-            obj.SetActive(true);
-            return obj;
-        }
-        else
-        {
-            // Si se acaban los objetos, puedes expandir el pool o reciclar
-            GameObject obj = Instantiate(prefabCounterTarget, spawnArea);
-            return obj;
-        }
+        GameObject option = Options[Random.Range(0, Options.Count)];
+        Options.Remove(option);
+        return option;
     }
 
     public void ReturnToPool(GameObject obj)
     {
-        obj.SetActive(false);
-        pool.Enqueue(obj);
+        Options.Add(obj);
     }
 
     private IEnumerator GameRoutine()
     {
         excelent = good = bad = 0;
-        elapsedTime = 0;
-        while (elapsedTime < gameDuration)
+        elapsedTime = Time.time + gameDuration;
+        while (elapsedTime > Time.time)
         {
-            SpawnTarget();
-            yield return new WaitForSeconds(spawnInterval);
-            elapsedTime += spawnInterval;
+            yield return null;
         }
 
         EndGame();
     }
 
-    private void SpawnTarget()
+    public GameObject poupView;
+    public TextMeshProUGUI popupText;
+
+    public List<string> GooMessages = new List<string>();
+    public List<string> ExcelentMessages = new List<string>();
+    public List<string> BadMessages = new List<string>();
+
+    public void ReadCounterTarget(CounterTarget counterTarget, float distance)
     {
-        GameObject obj = GetFromPool();
+        poupView?.SetActive(true);
 
-        // Calcular posición aleatoria dentro del RectTransform
-        Vector2 size = spawnArea.rect.size;
-        Vector2 randomPos = new Vector2(
-            Random.Range(-size.x / 2, size.x / 2),
-            Random.Range(-size.y / 2, size.y / 2)
-        );
-
-        obj.transform.localPosition = randomPos;
-
-        // Inicializar el target
-        CounterTarget target = obj.GetComponent<CounterTarget>();
-        target.Init(this, 4f); // 4 segundos de vida
-    }
-
-    private IEnumerator ReturnAfterLifetime(GameObject obj, float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        if (obj.activeSelf) // Asegurar que no fue destruido por click
-        {
-            ReturnToPool(obj);
-        }
-    }
-
-    public void ReadCounterTarget(CounterTarget counterTarget)
-    {
-        float diff = Time.time - counterTarget.lifeTime;
-
-        counterTarget.HideAll();
-        if (diff < 2f)
+        if (distance <= 20)
         {
             excelent++;
-            counterTarget.excelentView.SetActive(true);
+            popupText.text = ExcelentMessages[Random.Range(0,ExcelentMessages.Count)];
         }
-        else if (diff < 3f)
+        else if (distance <= 50)
         {
             good++;
-            counterTarget.goodView.SetActive(true);
+            popupText.text = GooMessages[Random.Range(0,GooMessages.Count)];
         }
         else
         {
             bad++;
-            counterTarget.badView.SetActive(true);
+            popupText.text = BadMessages[Random.Range(0,BadMessages.Count)];
         }
+        elapsedTime += 2.5f;
+        StartCoroutine(DisableMessageAfterTime());
+        EnableOne();        
+    }
+
+    public void CountBad()
+    {
+        bad++;
+        elapsedTime += 2.5f;
+        poupView?.SetActive(true);
+        popupText.text = BadMessages[Random.Range(0, BadMessages.Count)];
+        StartCoroutine(DisableMessageAfterTime());
+    }
+
+    IEnumerator DisableMessageAfterTime()
+    {
+        yield return new WaitForSeconds(4.9f);
+        poupView?.SetActive(false);
+    }
+
+    public void EnableOne()
+    {
+        GameObject nextTarget = GetFromPool();
+        CounterTarget newTarget = nextTarget.GetComponent<CounterTarget>();
+        newTarget.disable = false;
+        newTarget.spriteImage.color = new Color(1, 1, 1, 1f);
     }
 
     private void EndGame()
     {
         Debug.Log("Juego terminado! Puntos: " + (excelent * 3 + good * 2 + bad));
         OnGameEnd?.Invoke(excelent, good, bad);
+        OnEndGame?.Invoke();
         // Aquí puedes disparar un evento, mostrar UI de resultados, etc.
     }
 }

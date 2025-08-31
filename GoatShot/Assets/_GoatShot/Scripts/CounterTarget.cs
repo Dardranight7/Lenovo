@@ -1,14 +1,18 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class CounterTarget : MonoBehaviour, IPointerClickHandler
 {
     [HideInInspector] public float lifeTime;
     [HideInInspector] public float maxLifeTime = 4f;
-    public GameObject goodView,excelentView, badView;
+
 
     private CounterMinigame manager;
     bool beTouched = false;
+    public bool disable = true;
+
+    public Image spriteImage;
 
     public void Init(CounterMinigame minigame, float maxLife)
     {
@@ -30,30 +34,21 @@ public class CounterTarget : MonoBehaviour, IPointerClickHandler
             }
             return;
         }
-        if (Time.time - lifeTime > maxLifeTime)
-        {
-            manager.ReturnToPool(gameObject); // En vez de Destroy
-        }
-    }
-
-    private void OnEnable()
-    {
-        HideAll();
-    }
-
-    public void HideAll()
-    {
-        excelentView.SetActive(false);
-        goodView.SetActive(false);
-        badView.SetActive(false);
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (disable)
+        {
+            return;
+        }
         if (beTouched)
             return; // Si ya ha sido tocado, no hacer nada más
-        CounterMinigame.OnCounterTouched?.Invoke(this);
+        Vector3 worldPos = eventData.pointerCurrentRaycast.worldPosition;
+        CounterMinigame.OnCounterTouched?.Invoke(this, (transform.position - worldPos).sqrMagnitude);
         beTouched = true;
-        touchedtime = Time.time + 1f; // Mostrar 2 segundos
+        spriteImage.color = new Color(1,1,1,0.1f);
+        touchedtime = Time.time +0.2f; // Mostrar 2 segundos
+        disable = true;
     }
 }

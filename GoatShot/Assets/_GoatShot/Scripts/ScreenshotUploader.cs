@@ -100,8 +100,6 @@ public class ScreenshotUploader : MonoBehaviour
 
                         // Incrementar el contador
                         PlayerPrefs.SetInt("fotoIndex", fotoIndex + 1);
-
-                        flowManager.Next();
                     }
                     else
                     {
@@ -142,5 +140,7 @@ public class ScreenshotUploader : MonoBehaviour
         qrImageDisplay.sprite = qrSprite;
 
         Debug.Log("QR generado con URL: " + text);
+
+        flowManager.Next();
     }
 }

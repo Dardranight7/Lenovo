@@ -267,9 +267,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTime: 0
   maxLifeTime: 4
-  goodView: {fileID: 5630407474308527151}
-  excelentView: {fileID: 4715568393652615554}
-  badView: {fileID: 7553655641469232265}
+  disable: 1
+  spriteImage: {fileID: 8166005234440941716}
 --- !u!1 &3853855191171268324
 GameObject:
   m_ObjectHideFlags: 0

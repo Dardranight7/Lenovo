@@ -68,16 +68,21 @@ public class UdpClickReceiverUI : MonoBehaviour
         }
     }
 
+    public bool autoDebug = true;
+
     void Update()
     {
-        //if (Time.frameCount % 200 == 0)
-        //{
-        //    var m = Input.mousePosition;
-        //    debugX = (int)m.x;
-        //    debugY = (int)m.y;
-        //    SimulateMessage();
-        //    Debug.Log($"[DEBUG] Cursor capturado: X={debugX}, Y={debugY}");
-        //}
+        if (autoDebug)
+        {
+            if (Time.frameCount % 200 == 0)
+            {
+                var m = Input.mousePosition;
+                debugX = (int)m.x;
+                debugY = (int)m.y;
+                SimulateMessage();
+                Debug.Log($"[DEBUG] Cursor capturado: X={debugX}, Y={debugY}");
+            }
+        }
 
         while (messageQueue.TryDequeue(out var msg))
         {
@@ -123,16 +128,23 @@ public class UdpClickReceiverUI : MonoBehaviour
         GameObject target = null;
         RaycastResult targetRaycast = default;
 
-        foreach (var r in results)
+        var handler = ExecuteEvents.GetEventHandler<IPointerClickHandler>(results[0].gameObject);
+        if (handler != null)
         {
-            var handler = ExecuteEvents.GetEventHandler<IPointerClickHandler>(r.gameObject);
-            if (handler != null)
-            {
-                target = handler;
-                targetRaycast = r;
-                break;
-            }
+            target = handler;
+            targetRaycast = results[0];
         }
+
+        //foreach (var r in results)
+        //{
+        //    var handler = ExecuteEvents.GetEventHandler<IPointerClickHandler>(r.gameObject);
+        //    if (handler != null)
+        //    {
+        //        target = handler;
+        //        targetRaycast = r;
+        //        break;
+        //    }
+        //}
 
         if (target == null)
         {

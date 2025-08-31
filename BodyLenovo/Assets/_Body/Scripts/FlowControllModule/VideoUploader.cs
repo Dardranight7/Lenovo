@@ -85,7 +85,6 @@ public class VideoUploader : MonoBehaviour
                         downloadUrl = urlTask.Result.ToString();
                         Debug.Log("Archivo disponible en: " + downloadUrl);
                         PlayerPrefs.SetInt("videoIndex", PlayerPrefs.GetInt("videoIndex",0) + 1);
-                        flowManager.Next(); // Avanzar al siguiente paso en el flujo de la aplicación
                     }
                     else
                     {
@@ -127,6 +126,8 @@ public class VideoUploader : MonoBehaviour
         qrImageDisplay.sprite = qrSprite;
 
         Debug.Log("QR generado con URL: " + text);
+
+        flowManager.Next(); // Avanzar al siguiente paso en el flujo de la aplicación
     }
 }
 
