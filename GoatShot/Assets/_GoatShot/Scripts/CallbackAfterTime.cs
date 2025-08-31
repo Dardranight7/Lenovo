@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -11,6 +12,7 @@ public class CallbackAfterTime : MonoBehaviour
 
     [Header("Optional UI Progress")]
     [SerializeField] private Image progressImage; // Debe estar en modo Filled - Horizontal
+    [SerializeField] TextMeshProUGUI progressText; // Texto opcional para mostrar el progreso
 
     private void OnEnable()
     {
@@ -32,6 +34,10 @@ public class CallbackAfterTime : MonoBehaviour
             // Si hay una imagen asignada, actualizar su fill
             if (progressImage != null)
                 progressImage.fillAmount = Mathf.Clamp01(elapsed / delay);
+
+            // Si hay un texto asignado, actualizar su valor
+            if (progressText != null)
+                progressText.text = $"{Mathf.Clamp01(elapsed / delay) * 100f:0}%";
 
             yield return null;
         }
