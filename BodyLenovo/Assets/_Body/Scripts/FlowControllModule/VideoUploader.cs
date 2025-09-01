@@ -6,6 +6,7 @@ using Firebase;
 using Firebase.Extensions;
 using Firebase.Storage;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using ZXing;
 using ZXing.QrCode;
@@ -22,8 +23,8 @@ public class VideoUploader : MonoBehaviour
     private FirebaseStorage storage;
     private StorageReference storageRef;
 
-    public ExperienceFlow flowManager; // Referencia al FlowManager para controlar el flujo de la aplicación
-
+    public bool GenerateQR = true;
+    public UnityEvent OnVideoUploaded;
     private void Start()
     {
         // Inicializar Firebase
@@ -97,10 +98,13 @@ public class VideoUploader : MonoBehaviour
 
         // Esperar hasta que la subida termine
         yield return new WaitUntil(() => isDone);
-
-        if (!string.IsNullOrEmpty(downloadUrl))
+        OnVideoUploaded?.Invoke();
+        if (GenerateQR)
         {
-            GenerateQRCode(downloadUrl);
+            if (!string.IsNullOrEmpty(downloadUrl))
+            {
+                GenerateQRCode(downloadUrl);
+            }
         }
     }
 
@@ -126,8 +130,6 @@ public class VideoUploader : MonoBehaviour
         qrImageDisplay.sprite = qrSprite;
 
         Debug.Log("QR generado con URL: " + text);
-
-        flowManager.Next(); // Avanzar al siguiente paso en el flujo de la aplicación
     }
 }
 

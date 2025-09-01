@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
+using UnityEngine.Events;
 
 public class DeffenseMinigame : MonoBehaviour
 {
@@ -67,12 +68,19 @@ public class DeffenseMinigame : MonoBehaviour
     private void OnDestroy()
     {
         spawnZone.OnPutShield.RemoveListener(SumarEscudos);
+        putShields.ClearShields();
     }
 
+    public PutShields putShields;
     public void SumarEscudos()
     {
         currentShields++;
+        if (currentShields >= maxShields)
+        {
+            putShields.gameObject.SetActive(false);
+        }
     }
+
 
     public void PlaceShield(PointerEventData pointerEvent)
     {
@@ -107,6 +115,8 @@ public class DeffenseMinigame : MonoBehaviour
         }
     }
 
+    public UnityEvent OnStartGame;
+
     public void StartGame()
     {
         StartCoroutine(GameLoop());
@@ -136,6 +146,7 @@ public class DeffenseMinigame : MonoBehaviour
                 SFXManager.Instance.PlaySFX("Pitazo");
                 player.gameObject.SetActive(true);
                 currentTime = Time.time + gameDuration;
+                OnStartGame?.Invoke();
             }
             // Spawn enemies or perform game logic here
             while (currentTime - Time.time > 0)

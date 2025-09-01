@@ -570,11 +570,6 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!1 &80894140 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1759843457429978052, guid: de750066213e9d447aeed012676037c9, type: 3}
-  m_PrefabInstance: {fileID: 417420447}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &80894141 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 61303543061778551, guid: de750066213e9d447aeed012676037c9, type: 3}
@@ -731,8 +726,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1031, y: 1920}
+  m_AnchoredPosition: {x: 0, y: -646.0868}
+  m_SizeDelta: {x: 971.2573, y: 126.1717}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &149387594
 MonoBehaviour:
@@ -754,7 +749,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 37add6f9c97f17c489f35b597259e4b4, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -796,14 +791,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29150ceb01e2ce043840ee8bab19df9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shieldPrefab: {fileID: 1759843457429978052, guid: de750066213e9d447aeed012676037c9, type: 3}
+  shieldsParent: {fileID: 589858982}
+  minDistance: 50
   OnPutShield:
     m_PersistentCalls:
       m_Calls: []
-  Shields:
-  - {fileID: 348339142}
-  - {fileID: 1752804896}
-  - {fileID: 369471765}
-  - {fileID: 80894140}
 --- !u!1001 &156988362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1027,7 +1020,7 @@ MonoBehaviour:
     pitch: 1
   - key: Protect
     clip:
-    - {fileID: 8300000, guid: d15d3c946078b7140a7d4177a0ffbcf8, type: 3}
+    - {fileID: 8300000, guid: 7216774ef787cb74a94981f3f9ce38a7, type: 3}
     volume: 1
     pitch: 1
   - key: Buuh
@@ -2458,16 +2451,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346418532}
   m_CullTransparentMesh: 1
---- !u!1 &348339142 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1759843457429978052, guid: de750066213e9d447aeed012676037c9, type: 3}
-  m_PrefabInstance: {fileID: 1467892306056151577}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &369471765 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1759843457429978052, guid: de750066213e9d447aeed012676037c9, type: 3}
-  m_PrefabInstance: {fileID: 880369530}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &369471766 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 61303543061778551, guid: de750066213e9d447aeed012676037c9, type: 3}
@@ -3328,6 +3311,7 @@ GameObject:
   - component: {fileID: 589858984}
   - component: {fileID: 589858985}
   - component: {fileID: 589858986}
+  - component: {fileID: 589858987}
   m_Layer: 5
   m_Name: Gameplay
   m_TagString: Untagged
@@ -3440,6 +3424,22 @@ MonoBehaviour:
   EnteredText: {fileID: 808928646}
   RejectedText: {fileID: 1580487696}
   RejectedTwoText: {fileID: 346418534}
+  putShields: {fileID: 149387597}
+  OnStartGame:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 402792960}
+        m_TargetAssemblyTypeName: UnityEngine.Video.VideoPlayer, UnityEngine
+        m_MethodName: set_clip
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 32900000, guid: d7e01cfaab952a349a31fbbd59f16690, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   timerText: {fileID: 1625387642}
   touchPoints:
   - {fileID: 54667448}
@@ -3474,6 +3474,34 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &589858987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589858981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ce12749abce7644b288f4330a14e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTimeReached:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 402792960}
+        m_TargetAssemblyTypeName: UnityEngine.Video.VideoPlayer, UnityEngine
+        m_MethodName: set_clip
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 32900000, guid: c92f5a0fdd40e5d42af42aeefe0aa2d1, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  delay: 0
 --- !u!1 &594636461
 GameObject:
   m_ObjectHideFlags: 0
@@ -5289,8 +5317,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -248}
-  m_SizeDelta: {x: 901, y: 148}
+  m_AnchoredPosition: {x: 3.7038, y: -248}
+  m_SizeDelta: {x: 908.4077, y: 148}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1286737291
 MonoBehaviour:
@@ -5312,7 +5340,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2046846858, guid: fcb7c3b25305f2b4ab8a11a18387cca1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1b02a4f98f6531a44ab753c26370cf7d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -5694,8 +5722,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: 0}
-  m_SizeDelta: {x: 591.0137, y: 208.9485}
+  m_AnchoredPosition: {x: 3, y: -17}
+  m_SizeDelta: {x: 904, y: 101}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1402726071
 MonoBehaviour:
@@ -5717,7 +5745,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -376467992, guid: 9cad623cf118d4541ab411d48e64fd5e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf841f96bbda32f4687969175d01b725, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -5844,7 +5872,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: -201}
+  m_AnchoredPosition: {x: 3, y: -173}
   m_SizeDelta: {x: 718, y: 153.01822}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1409332770
@@ -5867,7 +5895,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1640812081, guid: df9d08fcc0b73be49873469297736a04, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34619f64b6f559e4c8df2b391af9cba5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7242,11 +7270,6 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
---- !u!1 &1752804896 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1759843457429978052, guid: de750066213e9d447aeed012676037c9, type: 3}
-  m_PrefabInstance: {fileID: 156988362}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1752804897 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 61303543061778551, guid: de750066213e9d447aeed012676037c9, type: 3}
@@ -7296,7 +7319,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758440129}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 782eb9a5e3f62c84d9f7ffd166c35e60, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 4daccd1d9b2c2c24b860b0a98132ec06, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -7797,8 +7820,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 112}
-  m_SizeDelta: {x: -94.3268, y: -69.4319}
+  m_AnchoredPosition: {x: 0, y: 171}
+  m_SizeDelta: {x: 0.000061035, y: -69.4319}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1878746953
 MonoBehaviour:
@@ -7820,7 +7843,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Posiciona tus defensas
+  m_text: "POSICIONA TUS DEFENSAS EN EL \xC1REA RESALTADA Y DEFIENDE\_TU\_EQUIPO"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 39170f0487642a64b83e478729453ef6, type: 2}
   m_sharedMaterial: {fileID: 7349153104453219296, guid: 39170f0487642a64b83e478729453ef6, type: 2}
@@ -7847,8 +7870,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 57.67
-  m_fontSizeBase: 57.67
+  m_fontSize: 37.88
+  m_fontSizeBase: 37.88
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8045,7 +8068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -385.45}
+  m_AnchoredPosition: {x: 0, y: 436}
   m_SizeDelta: {x: 794.4957, y: 248.8264}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1932799127
@@ -8588,7 +8611,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bbc60c2fcd230984b9b18f270733207a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ad07599456667d94e97621090f16693b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
