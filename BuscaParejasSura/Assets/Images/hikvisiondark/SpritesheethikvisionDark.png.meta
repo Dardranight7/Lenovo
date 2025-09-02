@@ -1,0 +1,596 @@
+fileFormatVersion: 2
+guid: b971f35f5fa69e84db05b5c8f96b2b2d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1352
+        width: 143
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a829321e0ffaa4a8725fae20f0a241
+      internalID: 972121914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_17
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1193
+        width: 69
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22cbd0c57c8cba4198beb6efe4d7fc4
+      internalID: -41367096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_18
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1190
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c429096b90b9ff341910032ed89c7159
+      internalID: 1051170125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_19
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 877
+        width: 341
+        height: 458
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7450cecd07749304f8997c67e09486c6
+      internalID: 140849646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_51
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1075
+        width: 302
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c644569dda72c54cbd074a036b8776a
+      internalID: -1528558315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_52
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1092
+        width: 299
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e25893fc606dc0449f16ec4d273f36a
+      internalID: 1068739700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_53
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1031
+        width: 70
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beba3ee7bbc2f0f4aa4ee91dc965381b
+      internalID: -543431926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_54
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1031
+        width: 82
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0163cb5b4a915324eb7d6fc42a074e14
+      internalID: -1727821776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_55
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 943
+        width: 302
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98fda7bf9a7d344ba168511be7933f4
+      internalID: 1353392637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_56
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 952
+        width: 218
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bd6e30254e8ab458980ca17f12d2ee
+      internalID: 1550851996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_57
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 965
+        width: 321
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa46567cd61e154d975e92fba59d2b4
+      internalID: 392300624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_59
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 45
+        width: 404
+        height: 877
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1c859490a94154fb377ab0d8d60f56
+      internalID: 1116172827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_60
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 45
+        width: 405
+        height: 877
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b630bc1bb112f149999d54808fbf895
+      internalID: -1576917549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_61
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 34
+        width: 358
+        height: 688
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c652bdd3897132346adad0082189e94b
+      internalID: 351816344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_62
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 45
+        width: 404
+        height: 734
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9f76877782dcc4a804dc9118546f91
+      internalID: -107678957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_63
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 24
+        width: 358
+        height: 814
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1d85b8147c51d4f9956d36c7c8302f
+      internalID: -1219445653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_64
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 31
+        width: 405
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d182e6a0e85c3147a0e0e460ae705be
+      internalID: 877944046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheethikvisionDark_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1243
+        width: 301
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7a04a25a7bd8544805ee41f53bca70
+      internalID: 462955318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SpritesheethikvisionDark_0: 972121914
+      SpritesheethikvisionDark_1: 462955318
+      SpritesheethikvisionDark_10: -940822848
+      SpritesheethikvisionDark_11: -634460030
+      SpritesheethikvisionDark_12: 296394808
+      SpritesheethikvisionDark_13: 2140761831
+      SpritesheethikvisionDark_14: 1070224134
+      SpritesheethikvisionDark_15: -256313319
+      SpritesheethikvisionDark_16: -751455679
+      SpritesheethikvisionDark_17: -41367096
+      SpritesheethikvisionDark_18: 1051170125
+      SpritesheethikvisionDark_19: 140849646
+      SpritesheethikvisionDark_2: 206862258
+      SpritesheethikvisionDark_20: 1639925684
+      SpritesheethikvisionDark_21: 1411109441
+      SpritesheethikvisionDark_22: 1350381789
+      SpritesheethikvisionDark_23: 978600559
+      SpritesheethikvisionDark_24: 1598410312
+      SpritesheethikvisionDark_25: 1031066653
+      SpritesheethikvisionDark_26: -1827064530
+      SpritesheethikvisionDark_27: -1742967841
+      SpritesheethikvisionDark_28: -1097221801
+      SpritesheethikvisionDark_29: -1677992867
+      SpritesheethikvisionDark_3: -1955181429
+      SpritesheethikvisionDark_30: 2000359272
+      SpritesheethikvisionDark_31: -865710453
+      SpritesheethikvisionDark_32: -1442412149
+      SpritesheethikvisionDark_33: -2054017017
+      SpritesheethikvisionDark_34: 417225966
+      SpritesheethikvisionDark_35: 156570546
+      SpritesheethikvisionDark_36: -914879788
+      SpritesheethikvisionDark_37: 567886881
+      SpritesheethikvisionDark_38: 568621098
+      SpritesheethikvisionDark_39: 1498943279
+      SpritesheethikvisionDark_4: -163454874
+      SpritesheethikvisionDark_40: 384994842
+      SpritesheethikvisionDark_41: -1558133366
+      SpritesheethikvisionDark_42: 544459029
+      SpritesheethikvisionDark_43: 84277751
+      SpritesheethikvisionDark_44: 295726862
+      SpritesheethikvisionDark_45: 1112684037
+      SpritesheethikvisionDark_46: -1338241630
+      SpritesheethikvisionDark_47: 957791140
+      SpritesheethikvisionDark_48: -1234232820
+      SpritesheethikvisionDark_49: 89138925
+      SpritesheethikvisionDark_5: -1350351516
+      SpritesheethikvisionDark_50: 2030476760
+      SpritesheethikvisionDark_51: -1528558315
+      SpritesheethikvisionDark_52: 1068739700
+      SpritesheethikvisionDark_53: -543431926
+      SpritesheethikvisionDark_54: -1727821776
+      SpritesheethikvisionDark_55: 1353392637
+      SpritesheethikvisionDark_56: 1550851996
+      SpritesheethikvisionDark_57: 392300624
+      SpritesheethikvisionDark_58: 1842603818
+      SpritesheethikvisionDark_59: 1116172827
+      SpritesheethikvisionDark_6: -1506425107
+      SpritesheethikvisionDark_60: -1576917549
+      SpritesheethikvisionDark_61: 351816344
+      SpritesheethikvisionDark_62: -107678957
+      SpritesheethikvisionDark_63: -1219445653
+      SpritesheethikvisionDark_64: 877944046
+      SpritesheethikvisionDark_7: -1093110284
+      SpritesheethikvisionDark_8: 982901806
+      SpritesheethikvisionDark_9: -1910582705
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
