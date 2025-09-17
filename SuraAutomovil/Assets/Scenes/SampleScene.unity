@@ -2233,10 +2233,10 @@ RectTransform:
   - {fileID: 1558424953}
   m_Father: {fileID: 1360094128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.79989994, y: -2.0779}
-  m_SizeDelta: {x: 0.8, y: 0.8}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &222397146
 MonoBehaviour:
@@ -7735,10 +7735,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1360094128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 2.8999, y: -0.9578999}
-  m_SizeDelta: {x: 0.8, y: 0.8}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &840667947
 MonoBehaviour:
@@ -7747,7 +7747,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840667945}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -7884,10 +7884,10 @@ RectTransform:
   - {fileID: 1599769822}
   m_Father: {fileID: 1360094128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1.8498999, y: -0.9578999}
-  m_SizeDelta: {x: 0.8, y: 0.8}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &856746305
 MonoBehaviour:
@@ -9363,10 +9363,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1360094128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.79989994, y: -0.9578999}
-  m_SizeDelta: {x: 0.8, y: 0.8}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1050037150
 MonoBehaviour:
@@ -9375,7 +9375,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050037148}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -9611,25 +9611,25 @@ MonoBehaviour:
     - virtualCamera: {fileID: 1870213053}
       button: {fileID: 1065727216}
       title: 'AMFORTIS WORKFLOW  '
-      description: "Utiliza la ultima generaci\xF3n de PDF\xB4s "
+      description: "Utiliza la ultima generaci\xF3n de PDF\xB4s."
       secondDescription: 
     - virtualCamera: {fileID: 1870213053}
       button: {fileID: 5543877}
       title: 'AMFORTIS WORKFLOW  '
       description: "Simplifica el proceso de conversi\xF3n de archivos PDF nativos
-        en archivos listos para producci\xF3n"
+        en archivos listos para producci\xF3n."
       secondDescription: 
     - virtualCamera: {fileID: 1870213053}
       button: {fileID: 174989119}
       title: 'AMFORTIS WORKFLOW  '
       description: "Con su propio preflight que permite validar la construcci\xF3n
-        de los archivos "
+        de los archivos. "
       secondDescription: 
     - virtualCamera: {fileID: 1870213053}
       button: {fileID: 1003119567}
       title: 'AMFORTIS WORKFLOW  '
       description: 'Optimiza los procesos y trabajos bajo una sola herramienta buscando
-        ahorros en tiempo y dinero '
+        ahorros en tiempo y dinero. '
       secondDescription: 
   - Name: magisF830
     Owners: "\xDAnico Due\xF1o"
@@ -9641,13 +9641,13 @@ MonoBehaviour:
       button: {fileID: 942784687}
       title: "MAGIS F 830nm - 1064nm | PEL\xCDCULA SECA "
       description: "Pel\xEDcula de ultima generaci\xF3n cuyo procesado no requiere
-        de qu\xEDmica "
+        de qu\xEDmica. "
       secondDescription: 
     - virtualCamera: {fileID: 1870213053}
       button: {fileID: 1779577007}
       title: "MAGIS F 830nm - 1064nm | PEL\xCDCULA SECA "
       description: "La pel\xEDcula MAGIS cuenta con una excelente calidad, usando
-        bajos consumos de energ\xEDa para su filmaci\xF3n "
+        bajos consumos de energ\xEDa para su filmaci\xF3n. "
       secondDescription: 
   - Name: Magis p-eco y pl
     Owners: "\xDAnico Due\xF1o"
@@ -9663,7 +9663,7 @@ MonoBehaviour:
     - virtualCamera: {fileID: 1870213053}
       button: {fileID: 1251095372}
       title: "MAGIS P\u2013Eco y MAGIS P-L "
-      description: "Hace parte de la tecnolog\xEDa Flat Top Dot (Punto plano) "
+      description: "Hace parte de la tecnolog\xEDa Flat Top Dot (Punto plano). "
       secondDescription: 
   - Name: Magis DI Imager
     Owners: "\xDAnico Due\xF1o"
@@ -9675,12 +9675,12 @@ MonoBehaviour:
       button: {fileID: 2019297451}
       title: 'MAGIS DI Imager '
       description: "Permite un proceso de exposici\xF3n para una pel\xEDcula de procesado
-        en seco "
+        en seco. "
       secondDescription: 
     - virtualCamera: {fileID: 1870213053}
       button: {fileID: 1850348135}
       title: 'MAGIS DI Imager '
-      description: "Consumo energ\xE9tico reducido y menor mantenimiento "
+      description: "Consumo energ\xE9tico reducido y menor mantenimiento. "
       secondDescription: 
   - Name: Magis La
     Owners: "\xDAnico Due\xF1o"
@@ -9708,17 +9708,17 @@ MonoBehaviour:
     - virtualCamera: {fileID: 1870213053}
       button: {fileID: 2075826693}
       title: 'MAGIS PRO-ECO '
-      description: "Exposici\xF3n, secado y acabado "
+      description: "Exposici\xF3n, secado y acabado. "
       secondDescription: 
     - virtualCamera: {fileID: 1870213053}
       button: {fileID: 1599218686}
       title: 'MAGIS PRO-ECO '
-      description: 'Proceso de lavado base agua '
+      description: 'Proceso de lavado base agua. '
       secondDescription: 
     - virtualCamera: {fileID: 1870213053}
       button: {fileID: 1644959831}
       title: magis pro-eco & eco reflow
-      description: 'Equipo Todo en Uno, compacto, productivo y confiable '
+      description: 'Equipo todo en uno, compacto, productivo y confiable. '
       secondDescription: 
   - Name: 'ECO3-MAGIS-FC3D '
     Owners: "\xDAnico Due\xF1o"
@@ -9730,7 +9730,7 @@ MonoBehaviour:
       button: {fileID: 1608744088}
       title: 'ECO3-MAGIS-FC3D '
       description: "Dispositivo de medici\xF3n flexogr\xE1fica que captura simult\xE1neamente
-        la superficie, las \xE1reas inferiores  y la estructura de un pol\xEDmero "
+        la superficie, las \xE1reas inferiores  y la estructura de un pol\xEDmero."
       secondDescription: 
     - virtualCamera: {fileID: 1870213053}
       button: {fileID: 520004945}
@@ -9753,7 +9753,7 @@ MonoBehaviour:
       button: {fileID: 1824810751}
       title: 'SUBLIMA '
       description: "Un tramado de modulaci\xF3n cruzada patentada por ECO3 que permite
-        trabajar gamas de color m\xE1s amplias "
+        trabajar gamas de color m\xE1s amplias."
       secondDescription: 
     - virtualCamera: {fileID: 1870213053}
       button: {fileID: 1829928647}
@@ -9770,7 +9770,7 @@ MonoBehaviour:
     - virtualCamera: {fileID: 1870213053}
       button: {fileID: 1433257487}
       title: 'GridTune '
-      description: 'Una forma de contener y controlar mejor el entintado '
+      description: Una forma de contener y controlar mejor el entintado.
       secondDescription: 
   - Name: Magis EC
     Owners: "\xDAnico Due\xF1o"
@@ -9781,7 +9781,7 @@ MonoBehaviour:
     - virtualCamera: {fileID: 1870213053}
       button: {fileID: 568415522}
       title: MAGIS EC
-      description: "Unidad de exposici\xF3n para plancha solvente"
+      description: "Unidad de exposici\xF3n para plancha solvente."
       secondDescription: 
   - Name: Magis Pro
     Owners: "\xDAnico Due\xF1o"
@@ -9792,7 +9792,7 @@ MonoBehaviour:
     - virtualCamera: {fileID: 1870213053}
       button: {fileID: 191282886}
       title: 'MAGIS PRO '
-      description: 'Procesadora para plancha solvente '
+      description: 'Procesadora para plancha solvente. '
       secondDescription: 
   - Name: MagisDLF
     Owners: "\xDAnico Due\xF1o"
@@ -9803,7 +9803,7 @@ MonoBehaviour:
     - virtualCamera: {fileID: 1870213053}
       button: {fileID: 1200329942}
       title: 'MAGIS D LF '
-      description: 'Unidad 3-en1 para secado y acabado de plancha solvente '
+      description: 'Unidad 3-en1 para secado y acabado de plancha solvente. '
       secondDescription: 
   animator: {fileID: 1164489570}
   windows:
@@ -12000,10 +12000,10 @@ RectTransform:
   - {fileID: 1908542959}
   m_Father: {fileID: 1360094128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 2.8999, y: -2.0779}
-  m_SizeDelta: {x: 0.8, y: 0.8}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1252315219
 MonoBehaviour:
@@ -13314,7 +13314,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1360094128
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18031,10 +18031,10 @@ RectTransform:
   - {fileID: 1115843764}
   m_Father: {fileID: 1360094128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1.8498999, y: -2.0779}
-  m_SizeDelta: {x: 0.8, y: 0.8}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1870220065
 MonoBehaviour:
