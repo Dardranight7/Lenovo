@@ -13,6 +13,7 @@ public class CallbackAfterTime : MonoBehaviour
     [Header("Optional UI Progress")]
     [SerializeField] private Image progressImage; // Debe estar en modo Filled - Horizontal
     [SerializeField] TextMeshProUGUI progressText; // Texto opcional para mostrar el progreso
+    [SerializeField] TextMeshProUGUI backCounter;
 
     private void OnEnable()
     {
@@ -38,6 +39,12 @@ public class CallbackAfterTime : MonoBehaviour
             // Si hay un texto asignado, actualizar su valor
             if (progressText != null)
                 progressText.text = $"{Mathf.Clamp01(elapsed / delay) * 100f:0}%";
+
+            // Si hay un contador de retroceso, actualizar su valor
+            if (backCounter != null)
+            {
+                backCounter.text = Mathf.CeilToInt(delay - elapsed).ToString();
+            }
 
             yield return null;
         }

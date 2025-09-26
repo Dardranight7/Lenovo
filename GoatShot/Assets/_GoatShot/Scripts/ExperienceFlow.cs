@@ -27,6 +27,16 @@ public class ExperienceFlow : MonoBehaviour
         currentStepIndex++; // Increment the current step index
     }
 
+    public void Back()
+    {
+        if (currentStepIndex - 1 <= 0)
+        {
+            currentStepIndex = 1;
+        }
+        EnableIndex(currentStepIndex - 1); // Enable the back step
+        currentStepIndex--; // Increment the current step index
+    }
+
     public void EnableIndex(int targetIndex)
     {
         //disable all steps

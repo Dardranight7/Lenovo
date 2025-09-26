@@ -8,18 +8,32 @@ using UnityEngine.Networking;
 public class VideoDownloader : MonoBehaviour
 {
     public string videoURL;
-    public string videoPath;
+    private string videoPath;
     public string videoName;
-    public UnityEvent OnVideoDownloaded;
+    public UnityEvent<string> OnVideoDownloaded;
 
-    private void Start()
+
+    [ContextMenu("Download Video")]
+    public void DownloadVideo()
     {
         int index = PlayerPrefs.GetInt("videoIndex" + videoName, 0);
         videoPath = Path.Combine(Application.persistentDataPath, videoName + index + ".mp4");
+        StartCoroutine(DownloadAndStore());
     }
 
-    public void DownloadVideo()
+    public void DownloadVideo(string customURL)
     {
+        int index = PlayerPrefs.GetInt("videoIndex" + videoName, 0);
+        videoPath = Path.Combine(Application.persistentDataPath, videoName + index + ".mp4");
+        videoURL = customURL;
+        StartCoroutine(DownloadAndStore());
+    }
+
+    public void DownloadVideoFromUser(LenovoAPI.UserResponse userResponse)
+    {
+        int index = PlayerPrefs.GetInt("videoIndex" + videoName, 0);
+        videoPath = Path.Combine(Application.persistentDataPath, videoName + index + ".mp4");
+        videoURL = userResponse.projects.goatHeart.url;
         StartCoroutine(DownloadAndStore());
     }
 
@@ -42,7 +56,7 @@ public class VideoDownloader : MonoBehaviour
         else
         {
             UnityEngine.Debug.Log("✅ Archivo descargado en: " + savePath);
-            OnVideoDownloaded?.Invoke();
+            OnVideoDownloaded?.Invoke(savePath);
             PlayerPrefs.SetInt("videoIndex" + videoName, PlayerPrefs.GetInt("videoIndex" + videoName, 0) + 1);
         }
     }

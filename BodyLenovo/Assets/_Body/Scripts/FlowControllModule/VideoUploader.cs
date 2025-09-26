@@ -15,7 +15,8 @@ public class VideoUploader : MonoBehaviour
 {
     [Header("Firebase")]
     public string firebaseStoragePath = "videos"; // Carpeta en Storage
-    public string localFilePath = "C:/Users/usuario/video.mp4"; // Ruta al archivo .mp4 local
+    private string localFilePath = "C:/Users/usuario/video.mp4"; // Ruta al archivo .mp4 local
+    [SerializeField] string FileName;
 
     [Header("UI")]
     public Image qrImageDisplay; // Arrastra un UI Image aquí para mostrar el QR
@@ -25,6 +26,10 @@ public class VideoUploader : MonoBehaviour
 
     public bool GenerateQR = true;
     public UnityEvent OnVideoUploaded;
+
+    public LenovoAPI lenovoAPI;
+    public string projectName;
+
     private void Start()
     {
         // Inicializar Firebase
@@ -60,7 +65,7 @@ public class VideoUploader : MonoBehaviour
     private IEnumerator UploadVideoAndGenerateQR()
     {
         string exeFolder = Path.GetDirectoryName(Application.dataPath);
-        string videoPath = Path.Combine(exeFolder, "body" + PlayerPrefs.GetInt("videoIndex", 0).ToString() + ".mp4");
+        string videoPath = Path.Combine(exeFolder, FileName + PlayerPrefs.GetInt("videoIndex", 0).ToString() + ".mp4");
         localFilePath = videoPath; // Asegura que la ruta es correcta para el dispositivo
         string fileName = Path.GetFileName(localFilePath);
         var fileRef = storageRef.Child($"{firebaseStoragePath}/{fileName}");
@@ -99,12 +104,22 @@ public class VideoUploader : MonoBehaviour
         // Esperar hasta que la subida termine
         yield return new WaitUntil(() => isDone);
         OnVideoUploaded?.Invoke();
+
         if (GenerateQR)
         {
             if (!string.IsNullOrEmpty(downloadUrl))
             {
                 GenerateQRCode(downloadUrl);
             }
+        }
+        if (lenovoAPI != null)
+        {
+            lenovoAPI.IngestJson(new LenovoAPI.IngestRequest()
+            {
+                phone = lenovoAPI.LastUser,
+                project = projectName,
+                originalUrl = downloadUrl,
+            });
         }
     }
 

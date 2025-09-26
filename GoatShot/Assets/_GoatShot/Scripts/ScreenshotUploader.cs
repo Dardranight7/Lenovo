@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.IO;
+using System.Threading.Tasks;
 using Firebase;
 using Firebase.Extensions;
 using Firebase.Storage;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using ZXing;
 using ZXing.QrCode;
@@ -22,8 +24,17 @@ public class ScreenshotUploader : MonoBehaviour
 
     public ExperienceFlow flowManager; // Referencia a tu flow manager
 
-    private void Start()
+    public bool GenrateQR;
+
+    public UnityEvent<string> OnUrlReceived; // Evento para enviar la URL
+
+    public UnityEvent<string> OnQRGenerated; // Evento para enviar la URL del QR
+
+    public IAUrlProcess iaProcessor; // Referencia al procesador de IA
+
+    private async void Start()
     {
+        await Task.Delay(1000); // Esperar un segundo para asegurar que todo esté listo
         // Inicializar Firebase manualmente
         FirebaseApp app = FirebaseApp.Create(new AppOptions()
         {
@@ -34,7 +45,7 @@ public class ScreenshotUploader : MonoBehaviour
             MessageSenderId = "472633703949",
         });
 
-        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
+        await FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
         {
             if (task.Result == DependencyStatus.Available)
             {
@@ -91,13 +102,17 @@ public class ScreenshotUploader : MonoBehaviour
             }
             else
             {
-                fileRef.GetDownloadUrlAsync().ContinueWithOnMainThread(urlTask =>
+                fileRef.GetDownloadUrlAsync().ContinueWithOnMainThread(async urlTask =>
                 {
                     if (!urlTask.IsFaulted && !urlTask.IsCanceled)
                     {
                         downloadUrl = urlTask.Result.ToString();
+                        OnUrlReceived?.Invoke(downloadUrl);
                         Debug.Log("Captura subida en: " + downloadUrl);
-
+                        if (iaProcessor != null)
+                        {
+                            await iaProcessor.SendImage(downloadUrl);
+                        }
                         // Incrementar el contador
                         PlayerPrefs.SetInt("fotoIndex", fotoIndex + 1);
                     }
@@ -114,7 +129,8 @@ public class ScreenshotUploader : MonoBehaviour
 
         if (!string.IsNullOrEmpty(downloadUrl))
         {
-            GenerateQRCode(downloadUrl);
+            if (GenrateQR)
+                GenerateQRCode(downloadUrl);
         }
     }
 
@@ -141,6 +157,7 @@ public class ScreenshotUploader : MonoBehaviour
 
         Debug.Log("QR generado con URL: " + text);
 
-        flowManager.Next();
+        flowManager.Next(); // Avanzar al siguiente paso en el flow manager
+        //OnQRGenerated?.Invoke(text); // Invocar el evento con la URL del QR
     }
 }

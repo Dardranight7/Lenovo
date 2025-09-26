@@ -6,6 +6,7 @@ using Firebase;
 using Firebase.Extensions;
 using Firebase.Storage;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using ZXing;
 using ZXing.QrCode;
@@ -14,7 +15,8 @@ public class VideoUploader : MonoBehaviour
 {
     [Header("Firebase")]
     public string firebaseStoragePath = "videos"; // Carpeta en Storage
-    public string localFilePath = "C:/Users/usuario/video.mp4"; // Ruta al archivo .mp4 local
+    private string localFilePath = "C:/Users/usuario/video.mp4"; // Ruta al archivo .mp4 local
+    [SerializeField] string FileName;
 
     [Header("UI")]
     public Image qrImageDisplay; // Arrastra un UI Image aquí para mostrar el QR
@@ -22,7 +24,11 @@ public class VideoUploader : MonoBehaviour
     private FirebaseStorage storage;
     private StorageReference storageRef;
 
-    public ExperienceFlow flowManager; // Referencia al FlowManager para controlar el flujo de la aplicación
+    public bool GenerateQR = true;
+    public UnityEvent OnVideoUploaded;
+
+    public LenovoAPI lenovoAPI;
+    public string projectName;
 
     private void Start()
     {
@@ -59,7 +65,7 @@ public class VideoUploader : MonoBehaviour
     private IEnumerator UploadVideoAndGenerateQR()
     {
         string exeFolder = Path.GetDirectoryName(Application.dataPath);
-        string videoPath = Path.Combine(exeFolder, "video" + PlayerPrefs.GetInt("videoIndex", 0).ToString() + ".mp4");
+        string videoPath = Path.Combine(exeFolder, FileName + PlayerPrefs.GetInt("videoIndex", 0).ToString() + ".mp4");
         localFilePath = videoPath; // Asegura que la ruta es correcta para el dispositivo
         string fileName = Path.GetFileName(localFilePath);
         var fileRef = storageRef.Child($"{firebaseStoragePath}/{fileName}");
@@ -84,8 +90,11 @@ public class VideoUploader : MonoBehaviour
                     {
                         downloadUrl = urlTask.Result.ToString();
                         Debug.Log("Archivo disponible en: " + downloadUrl);
+                        if (lenovoAPI != null)
+                        {
+                            UploadToBackend(downloadUrl);
+                        }
                         PlayerPrefs.SetInt("videoIndex", PlayerPrefs.GetInt("videoIndex",0) + 1);
-                        flowManager.Next(); // Avanzar al siguiente paso en el flujo de la aplicación
                     }
                     else
                     {
@@ -98,11 +107,26 @@ public class VideoUploader : MonoBehaviour
 
         // Esperar hasta que la subida termine
         yield return new WaitUntil(() => isDone);
+        OnVideoUploaded?.Invoke();
 
-        if (!string.IsNullOrEmpty(downloadUrl))
+        if (GenerateQR)
         {
-            GenerateQRCode(downloadUrl);
+            if (!string.IsNullOrEmpty(downloadUrl))
+            {
+                GenerateQRCode(downloadUrl);
+            }
         }
+    }
+
+    public async void UploadToBackend(string url)
+    {
+        await lenovoAPI.IngestJson(new LenovoAPI.IngestRequest()
+        {
+            phone = lenovoAPI.LastUser,
+            project = projectName,
+            originalUrl = "Hola",
+        });
+        Debug.Log("Trying to upload using: " + url);
     }
 
     private void GenerateQRCode(string text)

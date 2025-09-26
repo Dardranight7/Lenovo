@@ -128,7 +128,7 @@ public class DeffenseMinigame : MonoBehaviour
     public List<GameObject> touchPoints = new List<GameObject>();
     IEnumerator GameLoop()
     {
-        float gameDuration = 60f; // Duration of the game in seconds
+        float gameDuration = 30f; // Duration of the game in seconds
         float currentTime = Time.time + gameDuration;
         while (currentTime - Time.time > 0)
         {

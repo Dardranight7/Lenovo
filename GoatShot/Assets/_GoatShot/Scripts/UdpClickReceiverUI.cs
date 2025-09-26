@@ -70,18 +70,32 @@ public class UdpClickReceiverUI : MonoBehaviour
 
     public bool autoDebug = true;
 
+    public float timeBetweenClicks = 3;
+    float currentTime = 0;
     void Update()
     {
         if (autoDebug)
         {
-            if (Time.frameCount % 200 == 0)
+            if (currentTime - Time.time <= 0)
             {
                 var m = Input.mousePosition;
                 debugX = (int)m.x;
                 debugY = (int)m.y;
                 SimulateMessage();
+                currentTime = Time.time + timeBetweenClicks;
                 Debug.Log($"[DEBUG] Cursor capturado: X={debugX}, Y={debugY}");
             }
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            var m = Input.mousePosition;
+            debugX = (int)m.x;
+            debugY = (int)m.y;
+            SimulateMessage();
+            currentTime = Time.time + timeBetweenClicks;
+            Debug.Log($"[DEBUG] Cursor capturado: X={debugX}, Y={debugY}");
+
         }
 
         while (messageQueue.TryDequeue(out var msg))
@@ -105,7 +119,7 @@ public class UdpClickReceiverUI : MonoBehaviour
             return;
         }
 
-        PrefabSpawner.SpawnAtScreenPosition(screenPosition);
+        //PrefabSpawner.SpawnAtScreenPosition(screenPosition);
 
         var pointerData = new PointerEventData(EventSystem.current)
         {

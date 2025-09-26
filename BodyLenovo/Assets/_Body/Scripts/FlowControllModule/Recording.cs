@@ -11,6 +11,10 @@ public class Recording : MonoBehaviour
     public string fileName = "Body";
     public int frameRate = 30;
 
+    [Header("Audio (opcional)")]
+    [Tooltip("Deja vacío si no quieres audio. Puede ser una ruta a un archivo o un dispositivo.")]
+    public string audioInput = "";
+
     private Process ffmpegProcess;
     private BinaryWriter ffmpegStream;
     private Texture2D frameTexture;
@@ -25,6 +29,11 @@ public class Recording : MonoBehaviour
         Application.runInBackground = true;
     }
 
+    public void SetAudioInput(string URI)
+    {
+        audioInput = URI;
+    }
+
     [ContextMenu("Start Recording")]
     public void StartRecording()
     {
@@ -36,12 +45,37 @@ public class Recording : MonoBehaviour
         // Crear el Texture2D para leer datos
         frameTexture = new Texture2D(targetTexture.width, targetTexture.height, TextureFormat.RGB24, false);
 
-        // Comando FFmpeg para recibir datos crudos y comprimir a MP4
+        // Construcción de argumentos de FFmpeg
+        string ffmpegArgs =
+            $"-y -f rawvideo -pixel_format rgb24 -video_size {targetTexture.width}x{targetTexture.height} " +
+            $"-framerate {frameRate} -i -";
+
+        // Si hay audio configurado, lo añadimos como input
+        if (!string.IsNullOrEmpty(audioInput))
+        {
+            ffmpegArgs += $" -i \"{audioInput}\"";
+        }
+
+        // Siempre aplica el flip de video después de definir inputs
+        ffmpegArgs += " -vf vflip";
+
+        // Codecs de salida
+        if (!string.IsNullOrEmpty(audioInput))
+        {
+            ffmpegArgs += " -c:v libx264 -preset ultrafast -pix_fmt yuv420p -c:a aac -shortest";
+        }
+        else
+        {
+            ffmpegArgs += " -c:v libx264 -preset ultrafast -pix_fmt yuv420p";
+        }
+
+        // Archivo de salida
+        ffmpegArgs += $" \"{outputFileName}\"";
+
         ProcessStartInfo psi = new ProcessStartInfo
         {
             FileName = Path.Combine(Application.dataPath, "ffmpeg/bin/ffmpeg.exe"),
-            Arguments = $"-y -f rawvideo -pixel_format rgb24 -video_size {targetTexture.width}x{targetTexture.height} " +
-                        $"-framerate {frameRate} -i - -vf vflip -c:v libx264 -preset ultrafast -pix_fmt yuv420p \"{outputFileName}\"",
+            Arguments = ffmpegArgs,
             UseShellExecute = false,
             RedirectStandardInput = true,
             CreateNoWindow = true
@@ -53,9 +87,9 @@ public class Recording : MonoBehaviour
 
         ffmpegStream = new BinaryWriter(ffmpegProcess.StandardInput.BaseStream);
         isRecording = true;
-        frameTimer = 0f; // Reinicia el acumulador
+        frameTimer = 0f;
 
-        UnityEngine.Debug.Log("🎥 Grabación iniciada");
+        UnityEngine.Debug.Log("🎥 Grabación iniciada con" + (string.IsNullOrEmpty(audioInput) ? " sin audio" : $" audio: {audioInput}"));
     }
 
     [ContextMenu("Stop Recording")]
@@ -71,7 +105,7 @@ public class Recording : MonoBehaviour
             ffmpegProcess.WaitForExit();
             ffmpegProcess.Close();
 
-            videoUploader.UploadAndGenerateQR(); // Llama al método para subir el video y generar el QR
+            videoUploader.UploadAndGenerateQR();
             UnityEngine.Debug.Log("✅ Grabación finalizada: " + outputFileName);
         }
         catch (Exception e)
@@ -86,11 +120,9 @@ public class Recording : MonoBehaviour
     {
         if (!isRecording) return;
 
-        // Acumula tiempo real
         frameTimer += Time.deltaTime;
         float frameDuration = 1f / frameRate;
 
-        // Solo escribir un frame cuando haya pasado suficiente tiempo
         if (frameTimer >= frameDuration)
         {
             frameTimer -= frameDuration;

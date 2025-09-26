@@ -23,6 +23,7 @@ public class CounterMinigame : MonoBehaviour
 
     public static System.Action<CounterTarget, float> OnCounterTouched;
 
+    public TextMeshProUGUI timerText;
     private Coroutine gameLoop;
 
     public System.Action<int,int, int> OnGameEnd; // excelent, good, bad
@@ -32,14 +33,10 @@ public class CounterMinigame : MonoBehaviour
         OnCounterTouched += ReadCounterTarget;
     }
 
-    private void Awake()
-    {
-        CreatePool();
-    }
-
     private void OnEnable()
     {
         gameLoop = StartCoroutine(GameRoutine());
+        CreatePool();
         List<CounterTarget> targets = counterPreInstanced.Select(a=>a.GetComponent<CounterTarget>()).ToList();
         foreach (var item in targets)
         {
@@ -80,11 +77,12 @@ public class CounterMinigame : MonoBehaviour
     {
         excelent = good = bad = 0;
         elapsedTime = Time.time + gameDuration;
+        timerText.text = (elapsedTime - Time.time).ToString("F1") + "s";
         while (elapsedTime > Time.time)
         {
+            timerText.text = (elapsedTime - Time.time).ToString("F1") + "s";
             yield return null;
         }
-
         EndGame();
     }
 

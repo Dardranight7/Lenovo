@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using System.Collections;
+using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 
@@ -12,14 +12,9 @@ public class AvatarGenerator : MonoBehaviour
     public List<AvatarGenerator> SlaveAvatar;
     public bool IsMale;
 
-    private void OnEnable()
+    public async void TryToLoadAvatar()
     {
-        TryToLoadAvatar();
-    }
-
-    public void TryToLoadAvatar()
-    {
-        StartCoroutine(LoadAvatar());
+        await LoadAvatarAsync();
     }
 
     public void SetGenre(bool genre)
@@ -28,21 +23,35 @@ public class AvatarGenerator : MonoBehaviour
         Debug.Log(genre ? "Es hombre" : "Es mujer");
     }
 
-    IEnumerator LoadAvatar()
+    private async Task LoadAvatarAsync()
     {
-        if (LoadFromCode && code.Length <= 0)
-        {
-            yield break;
-        }
+        if (LoadFromCode && string.IsNullOrEmpty(code))
+            return;
+
+        // Siempre activar antes de generar
         Male.gameObject.SetActive(true);
         Female.gameObject.SetActive(true);
+
         bool isMale = IsMale;
         Debug.Log(isMale ? "Es hombre" : "Es mujer");
+
         if (LoadFromCode)
         {
             isMale = code[0] == '0';
-            code = code.Remove(0);
+            code = code.Remove(0,1);
         }
+        else
+        {
+            if (isMale)
+            {
+                Male.GenerateRandomCharacter();
+            }
+            else 
+            {
+                Female.GenerateRandomCharacter();
+            }
+        }
+
         if (isMale)
         {
             Male.gameObject.SetActive(true);
@@ -53,7 +62,10 @@ public class AvatarGenerator : MonoBehaviour
             Male.gameObject.SetActive(false);
             Female.gameObject.SetActive(true);
         }
-        yield return null;
+
+        // Espera un frame para asegurar que todo se procese bien
+        await Task.Yield();
+
         if (LoadFromCode)
         {
             if (isMale)
@@ -71,22 +83,28 @@ public class AvatarGenerator : MonoBehaviour
             {
                 if (CodeText != null)
                     CodeText.text = "0" + Male.currentCode;
+
                 Female.gameObject.SetActive(false);
+
                 foreach (var item in SlaveAvatar)
                 {
                     item.code = "0" + Male.currentCode;
                     item.LoadFromCode = true;
+                    item.TryToLoadAvatar(); // Llamada async también
                 }
             }
             else
             {
                 if (CodeText != null)
                     CodeText.text = "1" + Female.currentCode;
+
                 Male.gameObject.SetActive(false);
+
                 foreach (var item in SlaveAvatar)
                 {
                     item.code = "1" + Female.currentCode;
                     item.LoadFromCode = true;
+                    item.TryToLoadAvatar();
                 }
             }
         }

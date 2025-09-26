@@ -20,7 +20,7 @@ public class MultiDisplaySetup : MonoBehaviour
         {
             // SetParams(width, height, x, y)
             // Renderiza a 1920x1080 en modo ventana
-            Display.displays[1].SetParams(1080, 1920, 0, 0);
+            Display.displays[1].SetParams(1920, 1080, 0, 0);
         }
 
         Debug.Log("✅ Displays configurados en modo ventana (puedes moverlos manualmente).");

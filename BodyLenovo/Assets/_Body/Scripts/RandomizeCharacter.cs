@@ -31,11 +31,6 @@ public class RandomizeCharacter : MonoBehaviour
 
     public string currentCode;
 
-    private void OnEnable()
-    {
-        GenerateRandomCharacter();
-    }
-
     [ContextMenu("Randomize")]
     /// <summary>
     /// Genera un personaje aleatorio y crea un código corto que lo representa.
@@ -146,6 +141,8 @@ public class RandomizeCharacter : MonoBehaviour
             Texture tex = textures[texIndex % textures.Count];
             smr.material.SetTexture("_BaseColor_Map", tex);
         }
+
+        currentCode = code;
     }
 
     /// Codificación simple en base36
