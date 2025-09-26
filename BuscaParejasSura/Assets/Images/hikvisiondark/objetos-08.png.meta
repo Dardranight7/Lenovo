@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cdb0adb53bcd7394a9941fed4cfb9d13
+guid: 434b8dfb0c1ac5d4faf09740aaa019c3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -134,7 +134,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: objetos-08_0
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 489
+        width: 716
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789e3c6255fd5774eb992fd145a30458
+      internalID: -779032260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos-08_1
+      rect:
+        serializedVersion: 2
+        x: 2013
+        y: 323
+        width: 997
+        height: 994
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9bd47f71356a149ae6654323593b5d
+      internalID: 233103772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos-08_2
+      rect:
+        serializedVersion: 2
+        x: 4309
+        y: 489
+        width: 416
+        height: 684
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51190e67b2263d14e9ae23819c825e30
+      internalID: -145597899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos-08_3
+      rect:
+        serializedVersion: 2
+        x: 6013
+        y: 473
+        width: 849
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b974d0039fcbe4c91a9b20775cacf6
+      internalID: -1133767020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos-08_4
+      rect:
+        serializedVersion: 2
+        x: 8091
+        y: 527
+        width: 363
+        height: 598
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e305ba96973f1eb459791314c1c92afd
+      internalID: 2070962194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetos-08_5
+      rect:
+        serializedVersion: 2
+        x: 9501
+        y: 564
+        width: 1058
+        height: 491
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278758c5901d87b41b1a72998cd22911
+      internalID: 1372018710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +271,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      objetos-08_0: -779032260
+      objetos-08_1: 233103772
+      objetos-08_2: -145597899
+      objetos-08_3: -1133767020
+      objetos-08_4: 2070962194
+      objetos-08_5: 1372018710
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

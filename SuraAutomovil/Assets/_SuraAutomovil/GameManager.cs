@@ -18,6 +18,13 @@ public class GameManager : MonoBehaviour
 	int currentWindow = 0;
 	public static GameManager gameManager;
 
+	[SerializeField] float rotationSpeed = 0.2f;
+	[SerializeField] bool useWorldSpace = true;
+	Vector2 _lastFingerPos;
+	float _centerYaw;         
+	float _currentYawOffset;
+	[SerializeField] float maxYaw = 35f;
+
 	[Header("Popup")]
 	public TextMeshProUGUI title;
 	public TextMeshProUGUI description, secondDescription;
@@ -72,6 +79,11 @@ public class GameManager : MonoBehaviour
 		windows[currentWindow].SetActive(true);
     }
 
+	public void windowzero()
+    {
+		UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+	}
+
 	public void ShowTargetCar(int carIndex)
     {
         for (int i = 0; i < cars.Count; i++)
@@ -99,6 +111,8 @@ public class GameManager : MonoBehaviour
 
     void OnEnable()
 	{
+		_centerYaw = useWorldSpace ? pivot.eulerAngles.y : pivot.localEulerAngles.y;
+
 		LeanTouch.OnFingerUpdate += HandleFingerUpdate;
 	}
 
@@ -109,15 +123,35 @@ public class GameManager : MonoBehaviour
 		LeanTouch.OnFingerDown += (a) => { Debug.Log("Dafuq"); };
 	}
 
-	void HandleFingerUpdate(LeanFinger finger)
+	void HandleFingerUpdate(LeanFinger f)
 	{
-		if (finger.IsActive)
-        {
-			direction.x = (finger.ScreenPosition.x - lastFingerPos.x);
-			direction.y = (finger.ScreenPosition.y - lastFingerPos.y);
-			lastFingerPos = finger.ScreenPosition;
-			pivot.Rotate(Vector3.up, 180 * direction.normalized.x * Time.deltaTime);
-        }
+		if (!f.IsActive || pivot == null) return;
+
+		// Delta en píxeles desde el frame previo
+		Vector2 delta = f.ScreenDelta;
+
+		// Convertimos desplazamiento horizontal a yaw
+		float yawDelta = delta.x * rotationSpeed;
+
+		// Acumula y clampa el offset respecto al centro
+		_currentYawOffset = Mathf.Clamp(_currentYawOffset + yawDelta, -maxYaw, maxYaw);
+
+		float finalYaw = _centerYaw + _currentYawOffset;
+
+		if (useWorldSpace)
+		{
+			// Preserva X/Z y solo ajusta Y en espacio mundo
+			var e = pivot.eulerAngles;
+			e.y = finalYaw;
+			pivot.eulerAngles = e;
+		}
+		else
+		{
+			// Preserva X/Z y solo ajusta Y en espacio local
+			var e = pivot.localEulerAngles;
+			e.y = finalYaw;
+			pivot.localEulerAngles = e;
+		}
 	}
 
 	public void HideAll()
@@ -183,7 +217,7 @@ public class GameManager : MonoBehaviour
         {
 			foreach (var carView in carViews)
 			{
-				carView.virtualCamera.gameObject.SetActive(false);
+				//carView.virtualCamera.gameObject.SetActive(false);
 			}
 		}
     }
