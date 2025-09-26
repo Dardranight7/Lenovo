@@ -139,10 +139,10 @@ TextureImporter:
       name: "Juego Pantalla T\xE1ctil Andicom-07_0"
       rect:
         serializedVersion: 2
-        x: 5978
-        y: 857
-        width: 1547
-        height: 2763
+        x: 258
+        y: 4852
+        width: 2997
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +150,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a8e38757df4f854baa8da9a8158ec60
-      internalID: -1338566819
+      spriteID: 5bda9b63cd4e72f43abfa66d86c665b1
+      internalID: -1892575866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Juego Pantalla T\xE1ctil Andicom-07_11"
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 4729
+        width: 4181
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a4b7880057c594796fea6d76faf822
+      internalID: -1235398842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Juego Pantalla T\xE1ctil Andicom-07_12"
+      rect:
+        serializedVersion: 2
+        x: 10994
+        y: 597
+        width: 2677
+        height: 4725
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b4756416f105b43b5a16e7b55e13e8
+      internalID: -1774821381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Juego Pantalla T\xE1ctil Andicom-07_13"
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 3644
+        width: 2996
+        height: 919
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b882749e51e0142a485d6001c6090e
+      internalID: 849786085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Juego Pantalla T\xE1ctil Andicom-07_19"
+      rect:
+        serializedVersion: 2
+        x: 5307
+        y: 1524
+        width: 2265
+        height: 2807
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7280f62779be079459d08d892b1b551e
+      internalID: -1997321625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Juego Pantalla T\xE1ctil Andicom-07_20"
+      rect:
+        serializedVersion: 2
+        x: 8126
+        y: 782
+        width: 2669
+        height: 4262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ff46b22f82bcb449a8a3f476a9d454
+      internalID: 326473413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Juego Pantalla T\xE1ctil Andicom-07_32"
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 2233
+        width: 2930
+        height: 897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30261bbfc238a047b6547ec6e045514
+      internalID: 1799258012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Juego Pantalla T\xE1ctil Andicom-07_77"
+      rect:
+        serializedVersion: 2
+        x: 4012
+        y: 481
+        width: 2641
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b511c2979856b284e8a30a8a40434f6e
+      internalID: 1501544916
       vertices: []
       indices: 
       edges: []
@@ -160,19 +307,19 @@ TextureImporter:
       name: "Juego Pantalla T\xE1ctil Andicom-07_1"
       rect:
         serializedVersion: 2
-        x: 4145
-        y: 829
-        width: 1721
-        height: 2781
+        x: 3538
+        y: 2313
+        width: 1184
+        height: 173
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 103, y: 121, z: 108, w: 145}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38c76f24c0d79d8448ffe0bccfdf9467
-      internalID: -2089771949
+      spriteID: 19df2ff6f5d0c28438ee2b64d2347259
+      internalID: 1363196311
       vertices: []
       indices: 
       edges: []
@@ -181,31 +328,10 @@ TextureImporter:
       name: "Juego Pantalla T\xE1ctil Andicom-07_2"
       rect:
         serializedVersion: 2
-        x: 2678
-        y: 1969
-        width: 1346
-        height: 1660
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 107, y: 131, z: 131, w: 126}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51c3c93e18a98644bb8cc0eb8f41747d
-      internalID: -1694253289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Juego Pantalla T\xE1ctil Andicom-07_3"
-      rect:
-        serializedVersion: 2
-        x: 311
-        y: 3443
-        width: 771
-        height: 101
+        x: 266
+        y: 477
+        width: 3711
+        height: 1312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,134 +339,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c05f78bbe4837a443871975e4ca14d19
-      internalID: -647205807
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Juego Pantalla T\xE1ctil Andicom-07_4"
-      rect:
-        serializedVersion: 2
-        x: 322
-        y: 3043
-        width: 744
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 588b67121506bd94cb002d5780cd3ed2
-      internalID: -760166028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Juego Pantalla T\xE1ctil Andicom-07_5"
-      rect:
-        serializedVersion: 2
-        x: 189
-        y: 2596
-        width: 916
-        height: 278
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b9adb5410ae28f45869e673382c6aeb
-      internalID: -666596004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Juego Pantalla T\xE1ctil Andicom-07_6"
-      rect:
-        serializedVersion: 2
-        x: 172
-        y: 1863
-        width: 1784
-        height: 635
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5df6d257be5017d43a6181d0a60bb461
-      internalID: -1691477385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Juego Pantalla T\xE1ctil Andicom-07_7"
-      rect:
-        serializedVersion: 2
-        x: 249
-        y: 1504
-        width: 1580
-        height: 172
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5b95a19416585f43be0d44b2d690f73
-      internalID: -946604454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Juego Pantalla T\xE1ctil Andicom-07_8"
-      rect:
-        serializedVersion: 2
-        x: 227
-        y: 306
-        width: 649
-        height: 801
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 35, y: 47, z: 38, w: 40}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0593c445082e6c94db40362b40e35b40
-      internalID: 364001165
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Juego Pantalla T\xE1ctil Andicom-07_9"
-      rect:
-        serializedVersion: 2
-        x: 1070
-        y: 594
-        width: 1148
-        height: 181
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 985e79333e6427649846794371b1c97b
-      internalID: 252123580
+      spriteID: fcd5e0825f62a6f42ada0c4fe8f60f87
+      internalID: -1927321822
       vertices: []
       indices: 
       edges: []
@@ -358,14 +358,97 @@ TextureImporter:
     nameFileIdTable:
       "Juego Pantalla T\xE1ctil Andicom-07_0": -1892575866
       "Juego Pantalla T\xE1ctil Andicom-07_1": 1363196311
+      "Juego Pantalla T\xE1ctil Andicom-07_10": -1392487202
+      "Juego Pantalla T\xE1ctil Andicom-07_11": -1235398842
+      "Juego Pantalla T\xE1ctil Andicom-07_12": -1774821381
+      "Juego Pantalla T\xE1ctil Andicom-07_13": 849786085
+      "Juego Pantalla T\xE1ctil Andicom-07_14": -1973885447
+      "Juego Pantalla T\xE1ctil Andicom-07_15": 1187690671
+      "Juego Pantalla T\xE1ctil Andicom-07_16": -158955868
+      "Juego Pantalla T\xE1ctil Andicom-07_17": -1166642439
+      "Juego Pantalla T\xE1ctil Andicom-07_18": -1524960259
+      "Juego Pantalla T\xE1ctil Andicom-07_19": -1997321625
       "Juego Pantalla T\xE1ctil Andicom-07_2": -1927321822
+      "Juego Pantalla T\xE1ctil Andicom-07_20": 326473413
+      "Juego Pantalla T\xE1ctil Andicom-07_21": -1607868225
+      "Juego Pantalla T\xE1ctil Andicom-07_22": 215580488
+      "Juego Pantalla T\xE1ctil Andicom-07_23": 539607886
+      "Juego Pantalla T\xE1ctil Andicom-07_24": -792271599
+      "Juego Pantalla T\xE1ctil Andicom-07_25": 1061126204
+      "Juego Pantalla T\xE1ctil Andicom-07_26": -1481136076
+      "Juego Pantalla T\xE1ctil Andicom-07_27": 2107369676
+      "Juego Pantalla T\xE1ctil Andicom-07_28": -1607147102
+      "Juego Pantalla T\xE1ctil Andicom-07_29": -1519049227
       "Juego Pantalla T\xE1ctil Andicom-07_3": 1016842695
+      "Juego Pantalla T\xE1ctil Andicom-07_30": 1230809235
+      "Juego Pantalla T\xE1ctil Andicom-07_31": 360778657
+      "Juego Pantalla T\xE1ctil Andicom-07_32": 1799258012
+      "Juego Pantalla T\xE1ctil Andicom-07_33": -611452455
+      "Juego Pantalla T\xE1ctil Andicom-07_34": -889622194
+      "Juego Pantalla T\xE1ctil Andicom-07_35": -1634007959
+      "Juego Pantalla T\xE1ctil Andicom-07_36": -913906461
+      "Juego Pantalla T\xE1ctil Andicom-07_37": 841451117
+      "Juego Pantalla T\xE1ctil Andicom-07_38": -1391485244
+      "Juego Pantalla T\xE1ctil Andicom-07_39": 1812934111
       "Juego Pantalla T\xE1ctil Andicom-07_4": 814056336
+      "Juego Pantalla T\xE1ctil Andicom-07_40": 272977236
+      "Juego Pantalla T\xE1ctil Andicom-07_41": -1251689864
+      "Juego Pantalla T\xE1ctil Andicom-07_42": 1596888947
+      "Juego Pantalla T\xE1ctil Andicom-07_43": -2121533521
+      "Juego Pantalla T\xE1ctil Andicom-07_44": 572417200
+      "Juego Pantalla T\xE1ctil Andicom-07_45": -861095613
+      "Juego Pantalla T\xE1ctil Andicom-07_46": -33241074
+      "Juego Pantalla T\xE1ctil Andicom-07_47": 316145776
+      "Juego Pantalla T\xE1ctil Andicom-07_48": 152129395
+      "Juego Pantalla T\xE1ctil Andicom-07_49": 685494903
       "Juego Pantalla T\xE1ctil Andicom-07_5": -1696505880
+      "Juego Pantalla T\xE1ctil Andicom-07_50": -383985995
+      "Juego Pantalla T\xE1ctil Andicom-07_51": 986990130
+      "Juego Pantalla T\xE1ctil Andicom-07_52": -2037359424
+      "Juego Pantalla T\xE1ctil Andicom-07_53": -1147523809
+      "Juego Pantalla T\xE1ctil Andicom-07_54": -1221619116
+      "Juego Pantalla T\xE1ctil Andicom-07_55": 85808102
+      "Juego Pantalla T\xE1ctil Andicom-07_56": 178831479
+      "Juego Pantalla T\xE1ctil Andicom-07_57": -1291432901
+      "Juego Pantalla T\xE1ctil Andicom-07_58": -359393408
+      "Juego Pantalla T\xE1ctil Andicom-07_59": -1423085005
       "Juego Pantalla T\xE1ctil Andicom-07_6": 489144297
+      "Juego Pantalla T\xE1ctil Andicom-07_60": -1980430113
+      "Juego Pantalla T\xE1ctil Andicom-07_61": 2096777318
+      "Juego Pantalla T\xE1ctil Andicom-07_62": 1599599825
+      "Juego Pantalla T\xE1ctil Andicom-07_63": 1323326986
+      "Juego Pantalla T\xE1ctil Andicom-07_64": 1264504820
+      "Juego Pantalla T\xE1ctil Andicom-07_65": -751331829
+      "Juego Pantalla T\xE1ctil Andicom-07_66": -871221324
+      "Juego Pantalla T\xE1ctil Andicom-07_67": -138152924
+      "Juego Pantalla T\xE1ctil Andicom-07_68": -1949918762
+      "Juego Pantalla T\xE1ctil Andicom-07_69": 1409933301
       "Juego Pantalla T\xE1ctil Andicom-07_7": 1455022675
+      "Juego Pantalla T\xE1ctil Andicom-07_70": -1178113387
+      "Juego Pantalla T\xE1ctil Andicom-07_71": -1766026990
+      "Juego Pantalla T\xE1ctil Andicom-07_72": 1507246783
+      "Juego Pantalla T\xE1ctil Andicom-07_73": -1169888179
+      "Juego Pantalla T\xE1ctil Andicom-07_74": -1649092326
+      "Juego Pantalla T\xE1ctil Andicom-07_75": 517273744
+      "Juego Pantalla T\xE1ctil Andicom-07_76": -1167660427
+      "Juego Pantalla T\xE1ctil Andicom-07_77": 1501544916
+      "Juego Pantalla T\xE1ctil Andicom-07_78": -2125978348
+      "Juego Pantalla T\xE1ctil Andicom-07_79": 1600975083
       "Juego Pantalla T\xE1ctil Andicom-07_8": 824922014
+      "Juego Pantalla T\xE1ctil Andicom-07_80": -1511504070
+      "Juego Pantalla T\xE1ctil Andicom-07_81": 1717366169
+      "Juego Pantalla T\xE1ctil Andicom-07_82": -1954685264
+      "Juego Pantalla T\xE1ctil Andicom-07_83": 1408090886
+      "Juego Pantalla T\xE1ctil Andicom-07_84": -905392885
+      "Juego Pantalla T\xE1ctil Andicom-07_85": 1113312993
+      "Juego Pantalla T\xE1ctil Andicom-07_86": 1842438664
+      "Juego Pantalla T\xE1ctil Andicom-07_87": 10106869
+      "Juego Pantalla T\xE1ctil Andicom-07_88": 1853215528
+      "Juego Pantalla T\xE1ctil Andicom-07_89": 1594477211
       "Juego Pantalla T\xE1ctil Andicom-07_9": -319841509
+      "Juego Pantalla T\xE1ctil Andicom-07_90": -1748652628
+      "Juego Pantalla T\xE1ctil Andicom-07_91": 1979874819
+      "Juego Pantalla T\xE1ctil Andicom-07_92": 546527660
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

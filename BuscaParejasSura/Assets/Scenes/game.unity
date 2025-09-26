@@ -244,7 +244,7 @@ MonoBehaviour:
   - {fileID: 1099123434, guid: 75e8ca3fe2b9e364284058fa2d711c81, type: 3}
   textoPuntaje: {fileID: 861103695}
   textoPuntajeCortinilla: {fileID: 2137906082}
-  textopuuntajeconrtinilla: {fileID: 0}
+  textopuuntajeconrtinilla: {fileID: 654681459}
   DescripcionTiempo: {fileID: 0}
   textoTiempo: {fileID: 1704779361}
   instancia: {fileID: 3996842611115071352, guid: 732d2034d9398be4bbe6596ac710ed34,
@@ -266,12 +266,12 @@ MonoBehaviour:
       completo de los puntos flexogr\xE1ficos. "
     Imagebg: {fileID: 21300000, guid: 38b143661be1094479bcfe85c85bb66c, type: 3}
   - sprite: {fileID: 1621910701, guid: 89d9a51b5cb30a0439e0d6ac6e1ec550, type: 3}
-    text: 'MAGIS DI Imager '
+    text: "MAGIS DI \nIMAGER "
     textResponse: "Sistema de imagen digital de muy alta resoluci\xF3n y rapidez,
-      capaz de procesar pel\xEDcula seca "
+      capaz de procesar pel\xEDcula seca. "
     Imagebg: {fileID: 21300000, guid: 34acca7f2bfc3d544a1b9e32656c4627, type: 3}
   - sprite: {fileID: -111801942, guid: 89d9a51b5cb30a0439e0d6ac6e1ec550, type: 3}
-    text: "MAGIS LA \nLaminaci\xF3n de pel\xEDcula seca "
+    text: "MAGIS LA \nLAMINACI\xD3N DE PEL\xCDCULA SECA"
     textResponse: "Equipo para laminaci\xF3n que garantiza la calidad del punto plano
       a trav\xE9s de la eliminaci\xF3n del ox\xEDgeno."
     Imagebg: {fileID: 21300000, guid: a790b39a1cb3ebd45bdac7fffa875ea4, type: 3}
@@ -292,14 +292,14 @@ MonoBehaviour:
       planchas flexogr\xE1ficas base agua. "
     Imagebg: {fileID: 21300000, guid: b5d22dfe05a1042439192b2cbdf18b73, type: 3}
   - sprite: {fileID: -174583988, guid: 89d9a51b5cb30a0439e0d6ac6e1ec550, type: 3}
-    text: 'MAGIS P-Eco y P-L Plancha base  agua y solvente '
+    text: 'MAGIS P-Eco y P-L PLANCHA BASE AGUA Y SOLVENTE '
     textResponse: "Plancha que en combinaci\xF3n con la pel\xEDcula seca MAGIS\u202FF 
       reproduce puntos planos de alta definici\xF3n. "
     Imagebg: {fileID: 21300000, guid: 91a967cc8da54064d96e0371708c4fa9, type: 3}
   - sprite: {fileID: -263146448, guid: 89d9a51b5cb30a0439e0d6ac6e1ec550, type: 3}
-    text: 'ABS, SPIR@L, Sublima & GridTune Tramados & patrones de superficie '
+    text: 'ABS, SPIR@L, SUBLIMA & GRIDTUNE TRAMADOS & PATRONES DE SUPERFICIE '
     textResponse: "Tecnolog\xEDas de tramado y ret\xEDcula, que garantizan colores
-      consistentes y ahorro en tinta."
+      consistentes y ahorro de tinta."
     Imagebg: {fileID: 21300000, guid: 970840daa89dfaf46bf4b794bcc71070, type: 3}
 --- !u!1 &68339345
 GameObject:
@@ -1334,7 +1334,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "En Empresas SURA, el \xE1rea Legal acompa\xF1a a las empresas:"
+  m_text: "MAGIS LA \nLAMINACI\xD3N DE PEL\xCDCULA SECA"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d3f747a550e82ea46bc20a8fae91e654, type: 2}
   m_sharedMaterial: {fileID: 8040128553714350467, guid: d3f747a550e82ea46bc20a8fae91e654,
@@ -1362,13 +1362,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.2
+  m_fontSize: 52
   m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 16
+  m_fontSizeMax: 52
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535

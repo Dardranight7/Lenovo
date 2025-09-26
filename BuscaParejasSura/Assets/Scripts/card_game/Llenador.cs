@@ -144,6 +144,7 @@ public class Llenador : MonoBehaviour
     public class SpriteTextContainer
     {
         public Sprite sprite;
+        [TextArea]
         public string text, textResponse;
         public Sprite Imagebg;
     }
@@ -190,10 +191,36 @@ public class Llenador : MonoBehaviour
         {
             tiempoAntesTerminar += Time.deltaTime;
         }
-        if ((tiempoAntesTerminar < Time.time || puntaje >= 6) && !timeIsPaused)
+        switch (marca)
         {
-            StartCoroutine(finalizar());
+            case Marca.ECO3:
+            if ((tiempoAntesTerminar < Time.time || puntaje >= 8) && !timeIsPaused)
+            {
+                StartCoroutine(finalizar());
+            }
+            break;
+            case Marca.Hikvision:
+            if ((tiempoAntesTerminar < Time.time || puntaje >= 6) && !timeIsPaused)
+            {
+                StartCoroutine(finalizar());
+            }
+            break ;
+            case Marca.HikvisionDark:
+            if ((tiempoAntesTerminar < Time.time || puntaje >= 6) && !timeIsPaused)
+            {
+                StartCoroutine(finalizar());
+            }
+            break;
+            default:
+            if ((tiempoAntesTerminar < Time.time || puntaje >= 6) && !timeIsPaused)
+            {
+                StartCoroutine(finalizar());
+            }
+            break;
         }
+
+
+        
         textoTiempo.text = (tiempoAntesTerminar - Time.time).ToString("00 seg");
     }
 

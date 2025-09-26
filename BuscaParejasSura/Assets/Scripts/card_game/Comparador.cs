@@ -39,11 +39,8 @@ public class Comparador : MonoBehaviour
                     else if (Llenador.llenador.puntaje == 8)
 
                     {
-                        float tfinal = Time.time;
-                        var tiempoRestante = tfinal - (Llenador.llenador.tiempoAntesTerminar - Llenador.llenador.duracion);
-                        Llenador.llenador.textopuuntajeconrtinilla.text = "Parejas encontradas:";
-                        Llenador.llenador.textoPuntajeCortinilla.text = Llenador.llenador.puntaje.ToString("00");
-                        Llenador.llenador.DescripcionTiempo.text = "en:" + tiempoRestante + "s";
+                        Llenador.llenador.ShowContent(Comparables[0].GetComponent<Image>().sprite);
+                        Invoke(nameof(lastWait), 5f);
                     }
 
                     break;
@@ -98,6 +95,15 @@ public class Comparador : MonoBehaviour
             }
             Debug.Log("Son Diferentes");
         }
+    }
+
+    public void lastWait()
+    {
+
+        float tfinal = Time.time;
+        var tiempoRestante = tfinal - (Llenador.llenador.tiempoAntesTerminar - Llenador.llenador.duracion);
+        Llenador.llenador.textopuuntajeconrtinilla.text = "Parejas encontradas:";
+        Llenador.llenador.textoPuntajeCortinilla.text = Llenador.llenador.puntaje.ToString("00");
     }
 
     void Start()
