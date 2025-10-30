@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Lean.Touch;
@@ -91,8 +91,9 @@ public class GameManager : MonoBehaviour
 			cars[i].HideCar();
         }
 		cars[carIndex].ShowCar();
+		SetCurrentCar(cars[carIndex]);
 		//CarViewManager.ShowCarData(cars[carIndex]);
-    }
+	}
 
     private void Start()
     {
@@ -109,50 +110,93 @@ public class GameManager : MonoBehaviour
 		windows[0].SetActive(true);
     }
 
-    void OnEnable()
+void OnEnable()
 	{
 		_centerYaw = useWorldSpace ? pivot.eulerAngles.y : pivot.localEulerAngles.y;
 
+		LeanTouch.OnFingerDown += HandleFingerDown;
 		LeanTouch.OnFingerUpdate += HandleFingerUpdate;
 	}
 
 	void OnDisable()
 	{
+		LeanTouch.OnFingerDown -= HandleFingerDown;
 		LeanTouch.OnFingerUpdate -= HandleFingerUpdate;
-
-		LeanTouch.OnFingerDown += (a) => { Debug.Log("Dafuq"); };
 	}
+
+
+	private ExistingCars currentCar;
+
+	void HandleFingerDown(LeanFinger f)
+	{
+		if (pivot == null) return;
+		if (currentCar != null && currentCar.isImage) return;   // si es imagen, no rotamos
+		if (f.IsOverGui) return;                                 // ignora toques sobre UI
+
+		// Si quieres evitar multitouch para rotación:
+		if (LeanTouch.Fingers.Count > 1) return;
+
+		_centerYaw = useWorldSpace ? pivot.eulerAngles.y : pivot.localEulerAngles.y;
+		_currentYawOffset = 0f;
+	}
+
 
 	void HandleFingerUpdate(LeanFinger f)
 	{
 		if (!f.IsActive || pivot == null) return;
 
-		// Delta en p�xeles desde el frame previo
-		Vector2 delta = f.ScreenDelta;
+		// No rotar si el carro actual es imagen
+		if (currentCar != null && currentCar.isImage == true) return;
 
-		// Convertimos desplazamiento horizontal a yaw
+		if (f.IsOverGui) return;              
+		if (LeanTouch.Fingers.Count > 1) return;
+
+		Vector2 delta = f.ScreenDelta;
+		if (delta.sqrMagnitude <= 0f) return;
+
 		float yawDelta = delta.x * rotationSpeed;
 
-		// Acumula y clampa el offset respecto al centro
 		_currentYawOffset = Mathf.Clamp(_currentYawOffset + yawDelta, -maxYaw, maxYaw);
-
 		float finalYaw = _centerYaw + _currentYawOffset;
 
 		if (useWorldSpace)
 		{
-			// Preserva X/Z y solo ajusta Y en espacio mundo
 			var e = pivot.eulerAngles;
 			e.y = finalYaw;
 			pivot.eulerAngles = e;
 		}
 		else
 		{
-			// Preserva X/Z y solo ajusta Y en espacio local
 			var e = pivot.localEulerAngles;
 			e.y = finalYaw;
 			pivot.localEulerAngles = e;
 		}
 	}
+
+
+	public void SetCurrentCar(ExistingCars car)
+	{
+		currentCar = car;
+
+		// Si es una imagen, resetea la rotación del pivote
+		if (currentCar != null && currentCar.isImage && pivot != null)
+		{
+			// resetea rotación total
+			pivot.localRotation = Quaternion.identity;
+
+			// y reinicia el yaw
+			_centerYaw = 0f;
+			_currentYawOffset = 0f;
+		}
+		else if (pivot != null)
+		{
+			// recalcula el yaw central si no es imagen
+			_centerYaw = useWorldSpace ? pivot.eulerAngles.y : pivot.localEulerAngles.y;
+			_currentYawOffset = 0f;
+		}
+	}
+
+
 
 	public void HideAll()
     {
@@ -163,7 +207,8 @@ public class GameManager : MonoBehaviour
 		popup.gameObject.SetActive(false);
     }
 
-    [System.Serializable]	
+
+	[System.Serializable]	
 	public class CarView
     {
 		public CinemachineVirtualCamera virtualCamera;
@@ -178,6 +223,7 @@ public class GameManager : MonoBehaviour
 		[SerializeField] GameObject CarParent,CarModel;
 		[SerializeField] List<CarView> carViews = new();
 		public System.Action<CarView> OnShow;
+		public bool isImage;
 		public void Init()
         {
             for (int i = 0; i < carViews.Count; i++)
@@ -210,7 +256,8 @@ public class GameManager : MonoBehaviour
 				carView.virtualCamera.gameObject.SetActive(false);
 			}
             carViews[index].virtualCamera.gameObject.SetActive(true);
-            OnShow?.Invoke(carViews[index]);
+			GameManager.gameManager.SetCurrentCar(this); // 🔹 ahora asigna el carro
+			OnShow?.Invoke(carViews[index]);
 		}
 
 		public void Hide()
