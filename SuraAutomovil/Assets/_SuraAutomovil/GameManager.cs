@@ -96,7 +96,38 @@ public class GameManager : MonoBehaviour
 		//CarViewManager.ShowCarData(cars[carIndex]);
 	}
 
-    private void Start()
+	float GetYawSigned()
+	{
+		float y = useWorldSpace ? pivot.eulerAngles.y : pivot.localEulerAngles.y;
+		// Llevar a rango [-180, 180]
+		if (y > 180f) y -= 360f;
+		return y;
+	}
+
+	void SetYawSigned(float signedYaw)
+	{
+		// Normalizar a [0, 360) para asignar en eulerAngles
+		float y = signedYaw % 360f;
+		if (y < 0f) y += 360f;
+
+		if (useWorldSpace)
+		{
+			var e = pivot.eulerAngles;
+			e.y = y;
+			pivot.eulerAngles = e;
+		}
+		else
+		{
+			var e = pivot.localEulerAngles;
+			e.y = y;
+			pivot.localEulerAngles = e;
+		}
+	}
+
+	float baseYawSigned;
+
+
+	private void Start()
     {
         foreach (var car in cars)
         {
@@ -111,8 +142,8 @@ public class GameManager : MonoBehaviour
 		windows[0].SetActive(true);
 		if (pivot != null)
 		{
-			initialYaw = useWorldSpace ? pivot.eulerAngles.y : pivot.localEulerAngles.y;
-			_centerYaw = initialYaw;
+			baseYawSigned = GetYawSigned();
+			initialYaw = useWorldSpace ? pivot.eulerAngles.y : pivot.localEulerAngles.y; // si lo usas en otro lado
 		}
 	}
 
@@ -136,14 +167,9 @@ void OnEnable()
 	void HandleFingerDown(LeanFinger f)
 	{
 		if (pivot == null) return;
-		if (currentCar != null && currentCar.isImage) return;   // si es imagen, no rotamos
-		if (f.IsOverGui) return;                                 // ignora toques sobre UI
-
-		// Si quieres evitar multitouch para rotación:
+		if (currentCar != null && currentCar.isImage) return;
+		if (f.IsOverGui) return;
 		if (LeanTouch.Fingers.Count > 1) return;
-
-		_centerYaw = useWorldSpace ? pivot.eulerAngles.y : pivot.localEulerAngles.y;
-		_currentYawOffset = 0f;
 	}
 
 
@@ -160,38 +186,23 @@ void OnEnable()
 		Vector2 delta = f.ScreenDelta;
 		if (delta.sqrMagnitude <= 0f) return;
 
+		// Traducimos el drag a variación de yaw (en grados) con tu factor
 		float yawDelta = delta.x * rotationSpeed;
-		_currentYawOffset += yawDelta;
 
-		// Nuevo ángulo propuesto, relativo al ángulo inicial absoluto
-		float proposedYaw = _centerYaw + _currentYawOffset;
-		float minYaw = initialYaw - maxYaw;
-		float maxYawAbs = initialYaw + maxYaw;
+		// Yaw actual firmado
+		float current = GetYawSigned();
 
-		// Limita dentro del rango global absoluto
-		if (proposedYaw < minYaw)
-		{
-			proposedYaw = minYaw;
-			_currentYawOffset = minYaw - _centerYaw;
-		}
-		else if (proposedYaw > maxYawAbs)
-		{
-			proposedYaw = maxYawAbs;
-			_currentYawOffset = maxYawAbs - _centerYaw;
-		}
+		// Propuesta: sumar delta
+		float proposed = current + yawDelta;
 
-		if (useWorldSpace)
-		{
-			var e = pivot.eulerAngles;
-			e.y = proposedYaw;
-			pivot.eulerAngles = e;
-		}
-		else
-		{
-			var e = pivot.localEulerAngles;
-			e.y = proposedYaw;
-			pivot.localEulerAngles = e;
-		}
+		// Limitar contra rango absoluto fijo alrededor de la base
+		float minYaw = baseYawSigned - maxYaw;
+		float maxYawAbs = baseYawSigned + maxYaw;
+
+		proposed = Mathf.Clamp(proposed, minYaw, maxYawAbs);
+
+		// Aplicar
+		SetYawSigned(proposed);
 	}
 
 
@@ -199,21 +210,12 @@ void OnEnable()
 	{
 		currentCar = car;
 
-		// Si es una imagen, resetea la rotación del pivote
+
 		if (currentCar != null && currentCar.isImage && pivot != null)
 		{
-			// resetea rotación total
-			pivot.localRotation = Quaternion.identity;
-
-			// y reinicia el yaw
-			_centerYaw = 0f;
-			_currentYawOffset = 0f;
-		}
-		else if (pivot != null)
-		{
-			// recalcula el yaw central si no es imagen
-			_centerYaw = useWorldSpace ? pivot.eulerAngles.y : pivot.localEulerAngles.y;
-			_currentYawOffset = 0f;
+			// Para imágenes: fija yaw a la base (o a 0 si así lo prefieres)
+			SetYawSigned(baseYawSigned);
+			return;
 		}
 	}
 
