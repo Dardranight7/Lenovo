@@ -260,43 +260,43 @@ MonoBehaviour:
   cardResponseText: {fileID: 1011711122}
   image_Bg: {fileID: 258768384}
   spriteDefinitions:
-  - sprite: {fileID: 859980280, guid: 89d9a51b5cb30a0439e0d6ac6e1ec550, type: 3}
+  - sprite: {fileID: -362969214, guid: dde3769b6865c6b41b7f952c98302304, type: 3}
     text: 'ECO3-MAGIS-FC3D '
     textResponse: "Dispositivo de medici\xF3n que ofrece un an\xE1lisis tridimensional
       completo de los puntos flexogr\xE1ficos. "
     Imagebg: {fileID: 21300000, guid: 38b143661be1094479bcfe85c85bb66c, type: 3}
-  - sprite: {fileID: 1621910701, guid: 89d9a51b5cb30a0439e0d6ac6e1ec550, type: 3}
+  - sprite: {fileID: -727640171, guid: dde3769b6865c6b41b7f952c98302304, type: 3}
     text: "MAGIS DI \nIMAGER "
     textResponse: "Sistema de imagen digital de muy alta resoluci\xF3n y rapidez,
       capaz de procesar pel\xEDcula seca. "
     Imagebg: {fileID: 21300000, guid: 34acca7f2bfc3d544a1b9e32656c4627, type: 3}
-  - sprite: {fileID: -111801942, guid: 89d9a51b5cb30a0439e0d6ac6e1ec550, type: 3}
+  - sprite: {fileID: 820395061, guid: dde3769b6865c6b41b7f952c98302304, type: 3}
     text: "MAGIS LA \nLAMINACI\xD3N DE PEL\xCDCULA SECA"
     textResponse: "Equipo para laminaci\xF3n que garantiza la calidad del punto plano
       a trav\xE9s de la eliminaci\xF3n del ox\xEDgeno."
     Imagebg: {fileID: 21300000, guid: a790b39a1cb3ebd45bdac7fffa875ea4, type: 3}
-  - sprite: {fileID: -971786972, guid: 89d9a51b5cb30a0439e0d6ac6e1ec550, type: 3}
+  - sprite: {fileID: 1556655309, guid: dde3769b6865c6b41b7f952c98302304, type: 3}
     text: "MAGIS F 830nm y 1064nm PEL\xCDCULA SECA "
     textResponse: "Pel\xEDcula seca que transfiere 1:1 de punto (dot\u2011to\u2011dot)
       por laminaci\xF3n directa."
     Imagebg: {fileID: 21300000, guid: dbd11bfa5f68bdc4084a35b0b013a4a0, type: 3}
-  - sprite: {fileID: -1407055418, guid: 89d9a51b5cb30a0439e0d6ac6e1ec550, type: 3}
+  - sprite: {fileID: 2097675908, guid: dde3769b6865c6b41b7f952c98302304, type: 3}
     text: AMFORTIS WORKFLOW
     textResponse: "Flujo de trabajo que integra la automatizaci\xF3n para obtener
       procesos m\xE1s r\xE1pidos, eficientes y sostenibles en entornos de impresi\xF3n
       de etiquetas y empaques."
     Imagebg: {fileID: 21300000, guid: 46e5418265cd9c84dbf2307539e72745, type: 3}
-  - sprite: {fileID: 262138791, guid: 89d9a51b5cb30a0439e0d6ac6e1ec550, type: 3}
+  - sprite: {fileID: 1574203442, guid: dde3769b6865c6b41b7f952c98302304, type: 3}
     text: MAGIS PRO-ECO | LED
     textResponse: "Unidad todo\u2011en\u2011uno para un procesamiento integral de
       planchas flexogr\xE1ficas base agua. "
     Imagebg: {fileID: 21300000, guid: b5d22dfe05a1042439192b2cbdf18b73, type: 3}
-  - sprite: {fileID: -174583988, guid: 89d9a51b5cb30a0439e0d6ac6e1ec550, type: 3}
+  - sprite: {fileID: 1084329042, guid: dde3769b6865c6b41b7f952c98302304, type: 3}
     text: 'MAGIS P-Eco y P-L PLANCHA BASE AGUA Y SOLVENTE '
     textResponse: "Plancha que en combinaci\xF3n con la pel\xEDcula seca MAGIS\u202FF 
       reproduce puntos planos de alta definici\xF3n. "
-    Imagebg: {fileID: 21300000, guid: 91a967cc8da54064d96e0371708c4fa9, type: 3}
-  - sprite: {fileID: -263146448, guid: 89d9a51b5cb30a0439e0d6ac6e1ec550, type: 3}
+    Imagebg: {fileID: 21300000, guid: 943ec70125a1c54428ea8b6d57088a32, type: 3}
+  - sprite: {fileID: 104129821, guid: dde3769b6865c6b41b7f952c98302304, type: 3}
     text: 'ABS, SPIR@L, SUBLIMA & GRIDTUNE TRAMADOS & PATRONES DE SUPERFICIE '
     textResponse: "Tecnolog\xEDas de tramado y ret\xEDcula, que garantizan colores
       consistentes y ahorro de tinta."
