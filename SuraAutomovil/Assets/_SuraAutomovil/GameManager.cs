@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
 	float _centerYaw;         
 	float _currentYawOffset;
 	[SerializeField] float maxYaw = 35f;
+	private float initialYaw;
 
 	[Header("Popup")]
 	public TextMeshProUGUI title;
@@ -108,7 +109,12 @@ public class GameManager : MonoBehaviour
 				};
 		}
 		windows[0].SetActive(true);
-    }
+		if (pivot != null)
+		{
+			initialYaw = useWorldSpace ? pivot.eulerAngles.y : pivot.localEulerAngles.y;
+			_centerYaw = initialYaw;
+		}
+	}
 
 void OnEnable()
 	{
@@ -155,20 +161,35 @@ void OnEnable()
 		if (delta.sqrMagnitude <= 0f) return;
 
 		float yawDelta = delta.x * rotationSpeed;
+		_currentYawOffset += yawDelta;
 
-		_currentYawOffset = Mathf.Clamp(_currentYawOffset + yawDelta, -maxYaw, maxYaw);
-		float finalYaw = _centerYaw + _currentYawOffset;
+		// Nuevo ángulo propuesto, relativo al ángulo inicial absoluto
+		float proposedYaw = _centerYaw + _currentYawOffset;
+		float minYaw = initialYaw - maxYaw;
+		float maxYawAbs = initialYaw + maxYaw;
+
+		// Limita dentro del rango global absoluto
+		if (proposedYaw < minYaw)
+		{
+			proposedYaw = minYaw;
+			_currentYawOffset = minYaw - _centerYaw;
+		}
+		else if (proposedYaw > maxYawAbs)
+		{
+			proposedYaw = maxYawAbs;
+			_currentYawOffset = maxYawAbs - _centerYaw;
+		}
 
 		if (useWorldSpace)
 		{
 			var e = pivot.eulerAngles;
-			e.y = finalYaw;
+			e.y = proposedYaw;
 			pivot.eulerAngles = e;
 		}
 		else
 		{
 			var e = pivot.localEulerAngles;
-			e.y = finalYaw;
+			e.y = proposedYaw;
 			pivot.localEulerAngles = e;
 		}
 	}
